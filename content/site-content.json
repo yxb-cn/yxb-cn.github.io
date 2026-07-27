@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "analytics": {
+    "enabled": false,
+    "provider": "umami",
+    "scriptUrl": "https://cloud.umami.is/script.js",
+    "websiteId": ""
+  },
+  "profile": {
+    "name": "Your Name",
+    "nameChinese": "",
+    "alternateNames": [
+      "Your Name",
+      "Name, Your"
+    ],
+    "initials": "YN",
+    "photoPath": "/images/profile-demo-about.webp",
+    "navPhotoPath": "/images/profile-demo-nav.webp",
+    "originalPhotoPath": "/images/profile-demo-original.webp",
+    "photoCrops": {
+      "about": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.5
+      },
+      "nav": {
+        "zoom": 1,
+        "x": 0.5,
+        "y": 0.46
+      }
+    },
+    "facts": [
+      {
+        "label": "Status",
+        "value": "Ph.D. Candidate"
+      },
+      {
+        "label": "Job Market",
+        "value": "2026-27 · Available July 2027"
+      },
+      {
+        "label": "Languages",
+        "value": "English · Mandarin"
+      }
+    ],
+    "position": "Ph.D. Candidate in Economics",
+    "affiliation": "Department of Economics · Example University",
+    "bio": [
+      "I am a Ph.D. candidate in Economics at **Example University**, advised by [Prof. Jordan Lee](https://example.com/advisor). I expect to complete my degree in 2027. Before beginning my doctoral studies, I earned an M.Sc. in Economics from **Example Institute of Social Science** and a bachelor's degree from **Example College**.",
+      "My research sits at the intersection of applied econometrics, asset pricing, and machine learning. I study how high-dimensional information, changing economic conditions, and market frictions shape forecasts and financial decisions. My current work develops interpretable statistical methods and evaluates their performance in real-time empirical settings.",
+      "I welcome conversations with researchers and students working on related questions. Please feel free to get in touch if you would like to exchange ideas, discuss a project, or explore a potential collaboration."
+    ],
+    "interests": [
+      "Applied Econometrics",
+      "Empirical Asset Pricing",
+      "Time-Series Analysis",
+      "Machine Learning",
+      "Forecasting"
+    ],
+    "lastUpdated": "27 July 2026",
+    "cvPath": "/documents/Your_Name_CV.pdf",
+    "publicationNote": "Coauthors are shown as (with ...). ✉ denotes a corresponding author.",
+    "copyrightYear": "2026",
+    "footerNote": "This website contains fictional demonstration content.",
+    "siteUrl": "",
+    "metaTitle": "Your Name | Academic Homepage",
+    "metaDescription": "Your Name is a fictional Ph.D. candidate whose profile demonstrates the editable academic homepage template."
+  },
+  "contacts": [
+    {
+      "label": "Email",
+      "entries": [
+        {
+          "text": "your.name@example.com",
+          "url": "mailto:your.name@example.com",
+          "copyValue": "your.name@example.com"
+        }
+      ]
+    },
+    {
+      "label": "Google Scholar",
+      "entries": [
+        {
+          "text": "https://example.com/google-scholar",
+          "url": "https://example.com/google-scholar",
+          "copyValue": "https://example.com/google-scholar"
+        }
+      ]
+    },
+    {
+      "label": "SSRN",
+      "entries": [
+        {
+          "text": "https://example.com/ssrn",
+          "url": "https://example.com/ssrn",
+          "copyValue": "https://example.com/ssrn"
+        }
+      ]
+    },
+    {
+      "label": "GitHub",
+      "entries": [
+        {
+          "text": "https://example.com/github",
+          "url": "https://example.com/github",
+          "copyValue": "https://example.com/github"
+        }
+      ]
+    },
+    {
+      "label": "ORCID",
+      "entries": [
+        {
+          "text": "https://example.com/orcid",
+          "url": "https://example.com/orcid",
+          "copyValue": "https://example.com/orcid"
+        }
+      ]
+    }
+  ],
+  "mainSections": [
+    {
+      "id": "about",
+      "title": "About",
+      "navigationLabel": "About",
+      "showOnHomepage": true,
+      "showInNavigation": true,
+      "navigationPlacement": "top",
+      "template": "about"
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "navigationLabel": "Education",
+      "showOnHomepage": true,
+      "showInNavigation": true,
+      "navigationPlacement": "top",
+      "template": "education",
+      "dataKey": "education"
+    },
+    {
+      "id": "research",
+      "title": "Research Topics",
+      "navigationLabel": "Research Topics",
+      "showOnHomepage": true,
+      "showInNavigation": true,
+      "navigationPlacement": "top",
+      "template": "researchTopics",
+      "dataKey": "researchTopics"
+    },
+    {
+      "id": "publications",
+      "title": "Publications",
+      "navigationLabel": "Publications",
+      "showOnHomepage": true,
+      "showInNavigation": true,
+      "navigationPlacement": "top",
+      "template": "publicationGroups",
+      "dataKey": "publicationGroups"
+    },
+    {
+      "id": "projects",
+      "title": "Research Grants & Fellowships",
+      "navigationLabel": "Grants",
+      "showOnHomepage": true,
+      "showInNavigation": true,
+      "navigationPlacement": "top",
+      "template": "projects",
+      "dataKey": "projects"
+    },
+    {
+      "id": "code",
+      "title": "Data & Code",
+      "navigationLabel": "Data & Code",
+      "showOnHomepage": true,
+      "showInNavigation": true,
+      "navigationPlacement": "top",
+      "template": "codeProjects",
+      "dataKey": "codeProjects"
+    },
+    {
+      "id": "talks",
+      "title": "Conference Presentations",
+      "navigationLabel": "Presentations",
+      "showOnHomepage": true,
+      "showInNavigation": true,
+      "navigationPlacement": "more",
+      "template": "talks",
+      "dataKey": "talks"
+    },
+    {
+      "id": "service",
+      "title": "Service & Skills",
+      "navigationLabel": "Service & Skills",
+      "showOnHomepage": true,
+      "showInNavigation": false,
+      "navigationPlacement": "hidden",
+      "template": "serviceAndSkills",
+      "dataKey": "serviceAndSkills"
+    },
+    {
+      "id": "blog",
+      "title": "Blog",
+      "navigationLabel": "Blog",
+      "showOnHomepage": true,
+      "showInNavigation": true,
+      "navigationPlacement": "more",
+      "template": "pageCollection",
+      "fieldLabels": {},
+      "content": [
+        {
+          "showOnHomepage": true,
+          "meta": "July 2026",
+          "title": "Welcome to the Demo Blog",
+          "slug": "welcome-to-the-demo",
+          "summary": "A short example showing Markdown, links, and LaTeX on an independent page.",
+          "markdownPath": "public/page-content/blog/welcome-to-the-demo/index.md"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "2024 - Present",
+      "degree": "Ph.D. in Economics",
+      "institution": "Department of Economics, Example University",
+      "details": "Advisor: Prof. Jordan Lee. Fields: econometrics, finance, and machine learning."
+    },
+    {
+      "period": "2022 - 2024",
+      "degree": "M.Sc. in Economics",
+      "institution": "Example Institute of Social Science",
+      "details": "Thesis: Forecasting with high-dimensional macroeconomic data."
+    },
+    {
+      "period": "2018 - 2022",
+      "degree": "Bachelor's Degree in Economics",
+      "institution": "Example College",
+      "details": "Graduated with honors."
+    }
+  ],
+  "researchTopics": [
+    {
+      "number": "01",
+      "title": "Predictability in Financial Markets",
+      "text": "I study when financial returns and macroeconomic variables are predictable, with particular attention to real-time information, forecast evaluation, and economic value."
+    },
+    {
+      "number": "02",
+      "title": "High-Dimensional Factor Models",
+      "text": "I develop estimation and inference for latent-factor and factor-augmented models when predictors are numerous, persistent, or weakly informative."
+    },
+    {
+      "number": "03",
+      "title": "Time-Varying Econometrics",
+      "text": "I examine models whose coefficients change over time and use sieve and kernel methods to distinguish gradual evolution from abrupt structural change."
+    },
+    {
+      "number": "04",
+      "title": "Interpretable Machine Learning",
+      "text": "I design machine-learning methods that preserve economic structure while improving predictive accuracy and robustness."
+    },
+    {
+      "number": "05",
+      "title": "Forecast Combination",
+      "text": "I study how multiple models and data sources can be combined under uncertainty, instability, and limited samples."
+    }
+  ],
+  "publicationGroups": [
+    {
+      "id": "published-forthcoming",
+      "title": "Published & Forthcoming",
+      "papers": [
+        {
+          "showOnHomepage": true,
+          "type": "Journal",
+          "year": "2025",
+          "title": "Information Frictions and Regional Asset Prices",
+          "url": "https://example.com/papers/information-frictions",
+          "authors": [
+            {
+              "name": "Jordan Lee",
+              "self": false,
+              "corresponding": true
+            },
+            {
+              "name": "Your Name",
+              "self": true,
+              "corresponding": false
+            }
+          ],
+          "venue": "Journal of Applied Market Studies",
+          "note": "Vol. 12, No. 3, pp. 101-129",
+          "bibtex": "@article{lee2025information,\n  title = {Information Frictions and Regional Asset Prices},\n  author = {Lee, Jordan and Name, Your},\n  journal = {Journal of Applied Market Studies},\n  volume = {12},\n  number = {3},\n  pages = {101--129},\n  year = {2025}\n}",
+          "abstract": "This fictional demonstration paper studies how delayed information transmission affects regional asset prices. The example shows how a publication can display authors, journal information, a BibTeX record, links, and an abstract containing inline notation such as $R^2$.",
+          "links": [
+            {
+              "label": "Paper",
+              "url": "https://example.com/papers/information-frictions.pdf"
+            },
+            {
+              "label": "Code",
+              "url": "https://example.com/code/information-frictions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "revise-resubmit",
+      "title": "Revise & Resubmit",
+      "papers": [
+        {
+          "showOnHomepage": true,
+          "type": "Journal",
+          "year": "2026",
+          "title": "Learning from Sparse Macroeconomic Signals",
+          "url": "https://example.com/papers/sparse-signals",
+          "authors": [
+            {
+              "name": "Your Name",
+              "self": true,
+              "corresponding": true
+            },
+            {
+              "name": "Riley Chen",
+              "self": false,
+              "corresponding": false
+            }
+          ],
+          "venue": "Review of Quantitative Economics",
+          "note": "Revise & Resubmit",
+          "bibtex": "",
+          "abstract": "We develop a structured forecasting procedure for extracting a small number of economically interpretable signals from a high-dimensional macroeconomic panel. Simulated results illustrate how the method behaves when predictors are persistent and noisy.",
+          "links": [
+            {
+              "label": "Draft",
+              "url": "https://example.com/papers/sparse-signals.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "under-review",
+      "title": "Under Review",
+      "papers": [
+        {
+          "showOnHomepage": true,
+          "type": "Journal",
+          "year": "2026",
+          "title": "Nonlinear Factor Models with Shifting Loadings",
+          "url": "https://example.com/papers/shifting-loadings",
+          "authors": [
+            {
+              "name": "Sam Rivera",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Your Name",
+              "self": true,
+              "corresponding": true
+            }
+          ],
+          "venue": "Econometric Methods",
+          "note": "Under review",
+          "bibtex": "",
+          "abstract": "This fictional paper introduces a nonlinear factor model with smoothly changing loadings and studies estimation, inference, and forecast performance in finite samples.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "working-papers",
+      "title": "Working Papers",
+      "papers": [
+        {
+          "showOnHomepage": true,
+          "type": "Working Paper",
+          "year": "2026",
+          "title": "Forecast Combination under Structural Change",
+          "url": "https://example.com/papers/forecast-combination",
+          "authors": [
+            {
+              "name": "Your Name",
+              "self": true,
+              "corresponding": false
+            }
+          ],
+          "venue": "",
+          "note": "Manuscript in preparation",
+          "bibtex": "",
+          "abstract": "This project studies forecast combinations that adapt to gradual and abrupt changes in predictive relationships. The abstract demonstrates Markdown emphasis, for example **adaptive weighting**, and display mathematics: $$\\widehat{y}_{t+1}=\\sum_{m=1}^{M} w_{m,t}\\widehat{y}_{m,t+1}.$$",
+          "links": []
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "type": "Research Project",
+      "period": "Jan 2025 - Dec 2027",
+      "title": "Data-Rich Forecasting under Economic Instability",
+      "funder": "Example Research Foundation",
+      "grantNumber": "Grant No. DEMO-2025-01",
+      "principalInvestigator": "PI: Prof. Jordan Lee",
+      "role": "Research assistant"
+    },
+    {
+      "type": "Fellowship",
+      "period": "Sep 2024 - Jun 2027",
+      "title": "Graduate Research Fellowship",
+      "funder": "Example University",
+      "grantNumber": "Three-year fellowship",
+      "principalInvestigator": "Host department: Economics",
+      "role": "Fellowship recipient"
+    }
+  ],
+  "codeProjects": [
+    {
+      "type": "Replication",
+      "title": "Replication of a Forecast-Combination Study",
+      "description": "A compact example repository that reproduces simulation tables and figures from a fictional forecasting paper.",
+      "technologies": [
+        "R",
+        "Quarto",
+        "LaTeX"
+      ],
+      "url": "https://example.com/github/forecast-replication"
+    },
+    {
+      "type": "Tool",
+      "title": "Panel Forecasting Toolkit",
+      "description": "A demonstration package for rolling forecasts, model comparison, and reproducible output.",
+      "technologies": [
+        "Python",
+        "pandas",
+        "scikit-learn"
+      ],
+      "url": "https://example.com/github/panel-forecasting"
+    }
+  ],
+  "talks": [
+    {
+      "date": "Jun 2026",
+      "event": "Annual Conference on Data and Economic Forecasting",
+      "contribution": "Oral presentation",
+      "location": "Example University · Example City"
+    },
+    {
+      "date": "Nov 2025",
+      "event": "Workshop on Financial Econometrics",
+      "contribution": "Invited presentation",
+      "location": "Example Institute · Example City"
+    },
+    {
+      "date": "May 2025",
+      "event": "Graduate Research Conference in Economics",
+      "contribution": "Poster presentation · Best Student Poster Award",
+      "location": "Example College · Example City"
+    }
+  ],
+  "serviceAndSkills": [
+    {
+      "title": "Referee Service",
+      "items": [
+        "Example Journal of Applied Economics",
+        "Example Conference on Data Science"
+      ]
+    },
+    {
+      "title": "Software",
+      "items": [
+        "Python",
+        "R",
+        "Stata",
+        "MATLAB",
+        "$\\LaTeX$"
+      ]
+    },
+    {
+      "title": "Methods",
+      "items": [
+        "Time-series econometrics",
+        "Panel data",
+        "Machine learning",
+        "Nonparametric methods"
+      ]
+    }
+  ]
+}

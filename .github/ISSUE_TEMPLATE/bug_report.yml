@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible problem with the homepage or local editor.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a problem. Do not include private documents,
+        credentials, analytics secrets, or unpublished content.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. See ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Published homepage
+        - Local content editor
+        - GitHub Pages deployment
+        - Markdown or LaTeX rendering
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, browser, Node.js version, and pnpm version.
+      placeholder: Windows 11, Edge, Node 22.13, pnpm 11.9
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Paste a short error message or build output with private data removed.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues for the same problem.
+          required: true
+        - label: I removed personal data and secrets from this report.
+          required: true

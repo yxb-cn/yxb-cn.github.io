@@ -1,0 +1,243 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=0.70in,top=0.58in,bottom=0.60in]{geometry}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+
+\setmainfont{TeX Gyre Termes}
+
+\hypersetup{
+  pdfauthor={Your Name},
+  pdftitle={Curriculum Vitae - Your Name}
+}
+\urlstyle{same}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize \thepage}
+
+\titleformat{\section}
+  {\large\bfseries\scshape}
+  {}
+  {0pt}
+  {}
+\titlespacing*{\section}{0pt}{0.96em}{0.38em}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.00}
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\setlist[itemize]{
+  leftmargin=1.25em,
+  itemsep=0.18em,
+  topsep=0.18em,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\cvsection}[1]{%
+  \Needspace{2\baselineskip}%
+  \section{#1}%
+}
+
+\newcommand{\cvsubsection}[1]{%
+  \Needspace{4\baselineskip}%
+  \vspace{0.25em}%
+  {\itshape #1}\par
+  \vspace{0.15em}%
+}
+
+\newcommand{\educationentry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.27\textwidth}@{}}
+    {\makebox[1.15em][l]{\textbullet}\parbox[t]{\dimexpr\linewidth-1.15em\relax}{\raggedright\scshape #1}} & #2\\
+    {\hspace*{1.15em}\parbox[t]{\dimexpr\linewidth-1.15em\relax}{\raggedright\textit{#3}\strut}} & \\
+  \end{tabularx}
+  \vspace{0.14em}
+  \noindent\hspace*{1.15em}\parbox[t]{\dimexpr\textwidth-1.15em\relax}{\raggedright #4}\par
+  \vspace{0.45em}
+}
+
+\newcommand{\paperentry}[3]{%
+  \noindent
+  \hangindent=1.15em
+  \hangafter=1
+  \makebox[1.15em][l]{\textbullet}#1%
+  \if\relax\detokenize{#2}\relax\else
+    \ \textit{(with #2)}%
+  \fi
+  \if\relax\detokenize{#3}\relax\else
+    .\enspace #3%
+  \fi
+  \par
+  \vspace{0.55em}
+}
+
+\newcommand{\journal}[1]{\textbf{\textit{#1}}}
+
+\newcommand{\datedentry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}X@{}}
+    #1 & #2\\
+       & \textit{#3}
+  \end{tabularx}
+  \vspace{0.28em}
+}
+
+\newcommand{\grantentry}[4]{%
+  \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}p{0.24\textwidth}@{}}
+    {\makebox[1.15em][l]{\textbullet}\parbox[t]{\dimexpr\linewidth-1.15em\relax}{\raggedright #1}} & #2\\
+    {\hspace*{1.15em}\parbox[t]{\dimexpr\linewidth-1.15em\relax}{\raggedright\textit{#3}}} & \\
+  \end{tabularx}
+  \noindent\hspace*{1.15em}\parbox[t]{\dimexpr\textwidth-1.15em\relax}{\raggedright #4}\par
+  \vspace{0.44em}
+}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{25}{29}\selectfont Your Name}\\[0.24em]
+  \href{mailto:your.name@example.com}{your.name@example.com}
+  \quad | \quad
+  \href{mailto:your.name@example.edu}{your.name@example.edu}\\[0.18em]
+  \href{https://scholar.google.com/}{Google Scholar}
+  \quad | \quad
+  \href{https://www.ssrn.com/}{SSRN}
+  \quad | \quad
+  \href{https://github.com/your-name}{GitHub}
+  \quad | \quad
+  \href{https://orcid.org/0000-0000-0000-0000}{ORCID: 0000-0000-0000-0000}
+\end{center}
+
+\vspace{0.18em}
+\begin{flushright}
+  \small Last updated: July 2026
+\end{flushright}
+\vspace{-0.35em}
+
+\cvsection{Research Interests}
+Applied Econometrics; Empirical Asset Pricing; Time-Series Forecasting; Interpretable Machine Learning; High-Dimensional Factor Models.
+
+\cvsection{Education}
+
+\educationentry
+  {Example University, Department of Economics}
+  {Sep 2024 -- Expected Jun 2028}
+  {Ph.D. in Economics}
+  {Advisor: Prof. Jordan Lee.}
+
+\educationentry
+  {Example Institute of Social Science}
+  {Sep 2022 -- Jun 2024}
+  {Master's Degree in Economics}
+  {Thesis: Forecasting economic activity with high-dimensional information.}
+
+\educationentry
+  {Example College, School of Business}
+  {Sep 2018 -- Jun 2022}
+  {Bachelor's Degree in Economics}
+  {Graduated with honors.}
+
+\cvsection{Research Papers}
+
+\cvsubsection{Published and Forthcoming}
+
+\paperentry
+  {Information Frictions and Regional Asset Prices}
+  {Jordan Lee}
+  {\journal{Journal of Applied Market Studies}, 12(3), 101--129, 2025.}
+
+\cvsubsection{Revise and Resubmit}
+
+\paperentry
+  {Learning from Sparse Macroeconomic Signals}
+  {Riley Chen}
+  {Revise and resubmit at the \journal{Review of Quantitative Economics}.}
+
+\cvsubsection{Under Review}
+
+\paperentry
+  {Nonlinear Factor Models with Shifting Loadings}
+  {Sam Rivera}
+  {Under review at \journal{Econometric Methods}.}
+
+\cvsubsection{Working Papers}
+
+\paperentry
+  {Forecast Combination under Structural Change}
+  {}
+  {}
+
+\paperentry
+  {Interpretable Machine Learning for Asset-Pricing Signals}
+  {Taylor Morgan}
+  {}
+
+\newpage
+\cvsection{Research Grants and Fellowships}
+
+\grantentry
+  {Example Research Foundation Doctoral Fellowship}
+  {Sep 2025 -- Aug 2027}
+  {Example University}
+  {Recipient of a two-year fellowship supporting doctoral research in applied econometrics.}
+
+\grantentry
+  {Data-Intensive Social Science Research Project}
+  {Jan 2024 -- Dec 2026}
+  {Example National Research Council}
+  {Project participant. Principal investigator: Prof. Jordan Lee.}
+
+\cvsection{Conference Presentations}
+\textit{All presentations listed below were delivered orally.}\par
+
+\datedentry
+  {Jun 2026}
+  {International Conference on Applied Econometrics}
+  {Example University, Harbor City, Country}
+
+\datedentry
+  {Dec 2025}
+  {Workshop on Big Data and Financial Markets}
+  {Example Institute of Social Science, River City, Country}
+
+\datedentry
+  {Jul 2025}
+  {Annual Meeting of the Society for Empirical Finance}
+  {Example College, Capital City, Country. \textbf{Best Student Presentation Award}.}
+
+\datedentry
+  {Nov 2024}
+  {Graduate Forum in Economics and Management}
+  {Example Business School, Lake City, Country}
+
+\datedentry
+  {May 2024}
+  {Young Scholars Workshop on Forecasting}
+  {Example Research Center, Hill City, Country}
+
+\cvsection{Honors and Awards}
+\begin{itemize}
+  \item Doctoral Research Excellence Award, Example University.
+  \item Outstanding Graduate, Example Institute of Social Science.
+  \item Best Student Presentation Award, Society for Empirical Finance.
+  \item Graduate Academic Scholarship, Example University.
+  \item Honorable Mention, International Modeling Competition.
+\end{itemize}
+
+\cvsection{Professional Service and Skills}
+\textit{Referee service:} \journal{Journal of Example Economics}; \journal{Applied Market Review}.\par
+\textit{Software:} Python; R; Stata; MATLAB; \LaTeX.
+
+\end{document}
