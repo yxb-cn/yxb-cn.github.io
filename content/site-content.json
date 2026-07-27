@@ -1,10 +1,21 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 1.1,
   "analytics": {
     "enabled": true,
-    "provider": "umami",
-    "scriptUrl": "https://cloud.umami.is/script.js",
-    "websiteId": "f5006059-2a0c-4e1b-bf84-e62845b7fd26"
+    "providers": {
+      "umami": {
+        "enabled": true,
+        "scriptUrl": "https://cloud.umami.is/script.js",
+        "websiteId": "f5006059-2a0c-4e1b-bf84-e62845b7fd26"
+      },
+      "fiftyOneLa": {
+        "enabled": true,
+        "scriptUrl": "https://sdk.51.la/js-sdk-pro.min.js",
+        "siteId": "3QhHVCjHKSGEd8jH",
+        "ck": "3QhHVCjHKSGEd8jH",
+        "hashMode": true
+      }
+    }
   },
   "profile": {
     "name": "Xuanbin Yang",

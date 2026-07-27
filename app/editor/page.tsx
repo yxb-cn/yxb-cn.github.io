@@ -93,7 +93,7 @@ const sectionDescriptions: Record<string, string> = {
     "Manage names, job-market status, biography, CV, and search metadata.",
   contacts: "Manage email, Google Scholar, SSRN, GitHub, ORCID, and other links.",
   analytics:
-    "Turn privacy-friendly visitor analytics on or off without editing code.",
+    "Configure one or more visitor analytics providers without editing code.",
 };
 
 const fieldLabels: Record<string, string> = {
@@ -160,9 +160,11 @@ const fieldLabels: Record<string, string> = {
   template: "Layout Template",
   content: "Section Content",
   enabled: "Enable Analytics",
-  provider: "Provider",
   scriptUrl: "Script URL",
   websiteId: "Website ID",
+  siteId: "App ID",
+  ck: "CK",
+  hashMode: "Track hash navigation",
   slug: "Page Slug",
   meta: "Date / Term / Category",
   summary: "Short Summary",
@@ -960,22 +962,6 @@ function EditorField({
       ? "url"
       : "text";
 
-  if (fieldKey === "provider") {
-    return (
-      <div className={styles.field} id={editorTargetId(path)}>
-        <div className={styles.fieldLabelRow}>{editableLabel}</div>
-        <select
-          id={inputId}
-          aria-label={label}
-          value={stringValue}
-          onChange={(event) => onChange(path, event.target.value)}
-        >
-          <option value="umami">Umami</option>
-        </select>
-      </div>
-    );
-  }
-
   return (
     <div className={styles.field} id={editorTargetId(path)}>
       <div className={styles.fieldLabelRow}>{editableLabel}</div>
@@ -1013,6 +999,162 @@ function EditorField({
           }
         />
       )}
+    </div>
+  );
+}
+
+function AnalyticsToggle({
+  label,
+  description,
+  checked,
+  path,
+  onChange,
+}: {
+  label: string;
+  description: string;
+  checked: boolean;
+  path: FieldPath;
+  onChange: (path: FieldPath, value: JsonValue) => void;
+}) {
+  const inputId = useId();
+
+  return (
+    <div className={styles.analyticsToggle} id={editorTargetId(path)}>
+      <input
+        id={inputId}
+        type="checkbox"
+        checked={checked}
+        onChange={(event) => onChange(path, event.target.checked)}
+      />
+      <label htmlFor={inputId}>
+        <strong>{label}</strong>
+        <span>{description}</span>
+      </label>
+    </div>
+  );
+}
+
+function AnalyticsEditor({
+  value,
+  onChange,
+}: {
+  value: JsonObject;
+  onChange: (path: FieldPath, value: JsonValue) => void;
+}) {
+  const providers = isJsonObject(value.providers) ? value.providers : {};
+  const umami = isJsonObject(providers.umami) ? providers.umami : {};
+  const fiftyOneLa = isJsonObject(providers.fiftyOneLa)
+    ? providers.fiftyOneLa
+    : {};
+
+  return (
+    <div className={styles.analyticsEditor}>
+      <AnalyticsToggle
+        label="Enable Analytics"
+        description="Master switch for all configured providers below."
+        checked={value.enabled === true}
+        path={["analytics", "enabled"]}
+        onChange={onChange}
+      />
+
+      <div className={styles.analyticsNotice}>
+        <strong>Use one provider or run both at the same time.</strong>
+        <p>
+          Browser-side tracking IDs and 51LA&apos;s CK value are published with
+          the website. Do not paste account passwords, API keys, or access
+          tokens here. A provider loads only when both this master switch and
+          that provider&apos;s switch are enabled.
+        </p>
+      </div>
+
+      <div
+        className={styles.analyticsProviderGrid}
+        id={editorTargetId(["analytics", "providers"])}
+      >
+        <section className={styles.analyticsProviderCard}>
+          <div className={styles.analyticsProviderHeading}>
+            <div>
+              <strong>Umami</strong>
+              <span>Privacy-friendly aggregate and session analytics.</span>
+            </div>
+            <AnalyticsToggle
+              label="Enable Umami"
+              description="Load Umami tracking on the published site."
+              checked={umami.enabled === true}
+              path={["analytics", "providers", "umami", "enabled"]}
+              onChange={onChange}
+            />
+          </div>
+          <div className={styles.analyticsProviderFields}>
+            <EditorField
+              fieldKey="scriptUrl"
+              value={
+                typeof umami.scriptUrl === "string" ? umami.scriptUrl : ""
+              }
+              path={["analytics", "providers", "umami", "scriptUrl"]}
+              onChange={onChange}
+            />
+            <EditorField
+              fieldKey="websiteId"
+              value={
+                typeof umami.websiteId === "string" ? umami.websiteId : ""
+              }
+              path={["analytics", "providers", "umami", "websiteId"]}
+              onChange={onChange}
+            />
+          </div>
+        </section>
+
+        <section className={styles.analyticsProviderCard}>
+          <div className={styles.analyticsProviderHeading}>
+            <div>
+              <strong>51LA</strong>
+              <span>
+                An additional provider for traffic analysis in mainland China.
+              </span>
+            </div>
+            <AnalyticsToggle
+              label="Enable 51LA"
+              description="Load 51LA tracking on the published site."
+              checked={fiftyOneLa.enabled === true}
+              path={["analytics", "providers", "fiftyOneLa", "enabled"]}
+              onChange={onChange}
+            />
+          </div>
+          <div className={styles.analyticsProviderFields}>
+            <EditorField
+              fieldKey="scriptUrl"
+              value={
+                typeof fiftyOneLa.scriptUrl === "string"
+                  ? fiftyOneLa.scriptUrl
+                  : ""
+              }
+              path={["analytics", "providers", "fiftyOneLa", "scriptUrl"]}
+              onChange={onChange}
+            />
+            <EditorField
+              fieldKey="siteId"
+              value={
+                typeof fiftyOneLa.siteId === "string" ? fiftyOneLa.siteId : ""
+              }
+              path={["analytics", "providers", "fiftyOneLa", "siteId"]}
+              onChange={onChange}
+            />
+            <EditorField
+              fieldKey="ck"
+              value={typeof fiftyOneLa.ck === "string" ? fiftyOneLa.ck : ""}
+              path={["analytics", "providers", "fiftyOneLa", "ck"]}
+              onChange={onChange}
+            />
+            <EditorField
+              fieldKey="hashMode"
+              value={fiftyOneLa.hashMode !== false}
+              path={["analytics", "providers", "fiftyOneLa", "hashMode"]}
+              onChange={onChange}
+            />
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
@@ -3900,20 +4042,8 @@ export default function ContentEditor() {
 
               {settingsPanel === "analytics" && analyticsValue && (
                 <div className={styles.settingsGroup}>
-                  <div className={styles.analyticsNotice}>
-                    <strong>
-                      Use the values from Umami&apos;s tracking code.
-                    </strong>
-                    <p>
-                      The Website ID is safe to publish with the site. Do not
-                      paste an Umami password, API key, or access token here.
-                      The tracking script loads only when analytics is enabled
-                      and both fields are complete.
-                    </p>
-                  </div>
-                  <ObjectEditor
+                  <AnalyticsEditor
                     value={analyticsValue}
-                    path={["analytics"]}
                     onChange={changeValue}
                   />
                 </div>

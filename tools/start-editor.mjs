@@ -77,7 +77,7 @@ async function main() {
 
   if (target.port !== 3001) {
     process.stdout.write(
-      `Port 3001 is in use by another project. Using port ${target.port} instead.\n`,
+      `Port 3001 is unavailable. Using port ${target.port} instead.\n`,
     );
   }
   process.stdout.write(

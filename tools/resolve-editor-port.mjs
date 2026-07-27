@@ -62,7 +62,7 @@ function portIsAvailable(port) {
 export async function resolveEditorTarget({
   projectRoot = process.cwd(),
   startPort = Number.parseInt(process.env.SCHOLARCANVAS_PORT ?? "3001", 10),
-  portCount = 50,
+  portCount = 2_000,
 } = {}) {
   if (!Number.isInteger(startPort) || startPort < 1 || startPort > 65535) {
     throw new Error("SCHOLARCANVAS_PORT must be a valid TCP port.");

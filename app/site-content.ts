@@ -155,9 +155,20 @@ export type SiteContent = {
   schemaVersion: number;
   analytics: {
     enabled: boolean;
-    provider: "umami";
-    scriptUrl: string;
-    websiteId: string;
+    providers: {
+      umami: {
+        enabled: boolean;
+        scriptUrl: string;
+        websiteId: string;
+      };
+      fiftyOneLa: {
+        enabled: boolean;
+        scriptUrl: string;
+        siteId: string;
+        ck: string;
+        hashMode: boolean;
+      };
+    };
   };
   profile: {
     name: string;

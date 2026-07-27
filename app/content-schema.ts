@@ -1,6 +1,6 @@
 import { defaultMainSections } from "./site-content";
 
-export const currentContentSchemaVersion = 1;
+export const currentContentSchemaVersion = 1.1;
 
 export type ValidationIssue = {
   level: "error" | "warning";
@@ -67,12 +67,44 @@ export function migrateSiteContent<T extends UnknownRecord>(content: T) {
   }
 
   const analytics = isRecord(next.analytics) ? next.analytics : {};
+  const providers = isRecord(analytics.providers) ? analytics.providers : {};
+  const umami = isRecord(providers.umami) ? providers.umami : {};
+  const fiftyOneLa = isRecord(providers.fiftyOneLa)
+    ? providers.fiftyOneLa
+    : {};
+  const legacyUmamiEnabled =
+    analytics.enabled === true &&
+    (!text(analytics.provider) || text(analytics.provider) === "umami");
+
   next.analytics = {
     enabled: analytics.enabled === true,
-    provider: text(analytics.provider) || "umami",
-    scriptUrl:
-      text(analytics.scriptUrl) || "https://cloud.umami.is/script.js",
-    websiteId: text(analytics.websiteId),
+    providers: {
+      umami: {
+        enabled:
+          isRecord(providers.umami) && typeof umami.enabled === "boolean"
+            ? umami.enabled
+            : legacyUmamiEnabled,
+        scriptUrl:
+          text(umami.scriptUrl) ||
+          text(analytics.scriptUrl) ||
+          "https://cloud.umami.is/script.js",
+        websiteId: text(umami.websiteId) || text(analytics.websiteId),
+      },
+      fiftyOneLa: {
+        enabled:
+          isRecord(providers.fiftyOneLa) &&
+          fiftyOneLa.enabled === true,
+        scriptUrl:
+          text(fiftyOneLa.scriptUrl) ||
+          "https://sdk.51.la/js-sdk-pro.min.js",
+        siteId: text(fiftyOneLa.siteId),
+        ck: text(fiftyOneLa.ck),
+        hashMode:
+          typeof fiftyOneLa.hashMode === "boolean"
+            ? fiftyOneLa.hashMode
+            : true,
+      },
+    },
   };
 
   next.schemaVersion = currentContentSchemaVersion;
@@ -201,31 +233,82 @@ export function validateSiteContent(content: UnknownRecord) {
       message: "Analytics settings have an invalid structure.",
     });
   } else if (analytics.enabled === true) {
-    if (text(analytics.provider) !== "umami") {
+    const providers = isRecord(analytics.providers)
+      ? analytics.providers
+      : null;
+    const umami = providers && isRecord(providers.umami)
+      ? providers.umami
+      : null;
+    const fiftyOneLa = providers && isRecord(providers.fiftyOneLa)
+      ? providers.fiftyOneLa
+      : null;
+    const umamiEnabled = umami?.enabled === true;
+    const fiftyOneLaEnabled = fiftyOneLa?.enabled === true;
+
+    if (!providers) {
       issues.push({
         level: "error",
-        path: "analytics.provider",
-        message: "Umami is currently the supported analytics provider.",
+        path: "analytics.providers",
+        message: "Analytics provider settings have an invalid structure.",
+      });
+    } else if (!umamiEnabled && !fiftyOneLaEnabled) {
+      issues.push({
+        level: "error",
+        path: "analytics.providers",
+        message:
+          "Enable at least one analytics provider, or turn off Enable Analytics.",
       });
     }
-    const scriptUrl = text(analytics.scriptUrl);
-    if (
-      !scriptUrl ||
-      !validWebUrl(scriptUrl) ||
-      !scriptUrl.startsWith("https://")
-    ) {
-      issues.push({
-        level: "error",
-        path: "analytics.scriptUrl",
-        message: "Enter the complete HTTPS Script URL from Umami.",
-      });
+
+    if (umamiEnabled && umami) {
+      const scriptUrl = text(umami.scriptUrl);
+      if (
+        !scriptUrl ||
+        !validWebUrl(scriptUrl) ||
+        !scriptUrl.startsWith("https://")
+      ) {
+        issues.push({
+          level: "error",
+          path: "analytics.providers.umami.scriptUrl",
+          message: "Enter the complete HTTPS Script URL from Umami.",
+        });
+      }
+      if (!text(umami.websiteId)) {
+        issues.push({
+          level: "error",
+          path: "analytics.providers.umami.websiteId",
+          message: "Enter the Website ID before enabling Umami.",
+        });
+      }
     }
-    if (!text(analytics.websiteId)) {
-      issues.push({
-        level: "error",
-        path: "analytics.websiteId",
-        message: "Enter the Website ID from Umami before enabling analytics.",
-      });
+
+    if (fiftyOneLaEnabled && fiftyOneLa) {
+      const scriptUrl = text(fiftyOneLa.scriptUrl);
+      if (
+        !scriptUrl ||
+        !validWebUrl(scriptUrl) ||
+        !scriptUrl.startsWith("https://")
+      ) {
+        issues.push({
+          level: "error",
+          path: "analytics.providers.fiftyOneLa.scriptUrl",
+          message: "Enter the complete HTTPS Script URL from 51LA.",
+        });
+      }
+      if (!text(fiftyOneLa.siteId)) {
+        issues.push({
+          level: "error",
+          path: "analytics.providers.fiftyOneLa.siteId",
+          message: "Enter the App ID before enabling 51LA.",
+        });
+      }
+      if (!text(fiftyOneLa.ck)) {
+        issues.push({
+          level: "error",
+          path: "analytics.providers.fiftyOneLa.ck",
+          message: "Enter the CK value before enabling 51LA.",
+        });
+      }
     }
   }
 

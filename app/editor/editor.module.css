@@ -813,7 +813,6 @@
 .analyticsNotice {
   display: grid;
   gap: 5px;
-  margin-bottom: 18px;
   padding: 12px 14px;
   border: 1px solid #d5dfe5;
   border-radius: 3px;
@@ -831,6 +830,93 @@
   margin: 0;
   font-size: 12px;
   line-height: 1.55;
+}
+
+.analyticsEditor {
+  display: grid;
+  gap: 18px;
+}
+
+.analyticsToggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  min-width: 0;
+}
+
+.analyticsToggle input {
+  width: 16px;
+  height: 16px;
+  margin: 2px 0 0;
+  flex: 0 0 auto;
+  accent-color: #315f84;
+}
+
+.analyticsToggle label {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.analyticsToggle strong {
+  color: #263640;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.analyticsToggle span {
+  color: #68757e;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.analyticsProviderGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr));
+  gap: 16px;
+}
+
+.analyticsProviderCard {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid #dce1e4;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.analyticsProviderHeading {
+  display: grid;
+  gap: 13px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e8ecee;
+}
+
+.analyticsProviderHeading > div:first-child {
+  display: grid;
+  gap: 3px;
+}
+
+.analyticsProviderHeading > div:first-child strong {
+  color: #183c5a;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.analyticsProviderHeading > div:first-child span {
+  color: #68757e;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.analyticsProviderFields {
+  display: grid;
+  gap: 13px;
+  min-width: 0;
 }
 
 .fullWidth,

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import "katex/dist/katex.min.css";
 import "./globals.css";
+import { AnalyticsScripts } from "./analytics-scripts";
 import {
   absoluteSiteUrl,
   configuredSiteUrl,
@@ -47,13 +47,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const analytics = siteContent.analytics;
-  const loadUmami =
-    analytics.enabled &&
-    analytics.provider === "umami" &&
-    Boolean(analytics.scriptUrl.trim()) &&
-    Boolean(analytics.websiteId.trim());
-
   return (
     <html
       lang="en"
@@ -64,14 +57,7 @@ export default function RootLayout({
     >
       <body>
         {children}
-        {loadUmami && (
-          <Script
-            id="umami-analytics"
-            strategy="afterInteractive"
-            src={analytics.scriptUrl}
-            data-website-id={analytics.websiteId}
-          />
-        )}
+        <AnalyticsScripts analytics={siteContent.analytics} />
       </body>
     </html>
   );
