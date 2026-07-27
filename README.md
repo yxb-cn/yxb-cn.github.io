@@ -6,9 +6,9 @@
 
 _Edit publications, sections, pages, and files from one local workspace._
 
-<a href="./README.zh-CN.md"><img src="https://img.shields.io/badge/language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-173a5e.svg" alt="简体中文"></a>
+<a href="./README.zh-CN.md"><img src="https://img.shields.io/badge/To%20Chinese%20version-%E2%86%92-C2410C.svg?style=for-the-badge" alt="To Chinese version"></a>
 
-<a href="https://yxb-cn.github.io/scholarcanvas/" target="_blank" rel="noopener noreferrer">Template Demo ↗</a> · <a href="https://yxb-cn.github.io/" target="_blank" rel="noopener noreferrer">Author Website ↗</a> <em>(coming soon)</em> · <a href="#quick-start">Quick Start</a>
+<a href="https://yxb-cn.github.io/scholarcanvas/" target="_blank" rel="noopener noreferrer">Template Demo ↗</a> · <a href="https://yxb-cn.github.io/" target="_blank" rel="noopener noreferrer">Author Website ↗</a> · <a href="#quick-start">Quick Start</a>
 
 [![MIT License](https://img.shields.io/badge/license-MIT-173a5e.svg)](LICENSE) ![Pages URL](https://img.shields.io/badge/GitHub%20Pages-URL%20auto--detected-173a5e.svg) ![BibTeX](https://img.shields.io/badge/BibTeX-bulk%20import-173a5e.svg) ![Live Preview](https://img.shields.io/badge/preview-live%20desktop%20%2B%20mobile-173a5e.svg) ![One-click Editors](https://img.shields.io/badge/launchers-Windows%20%2B%20macOS-173a5e.svg)
 

@@ -6,9 +6,9 @@
 
 _在一个本地工作区中编辑论文、栏目、独立页面和文件。_
 
-<a href="./README.md"><img src="https://img.shields.io/badge/language-English-173a5e.svg" alt="English"></a>
+<a href="./README.md"><img src="https://img.shields.io/badge/To%20English%20version-%E2%86%92-C2410C.svg?style=for-the-badge" alt="To English version"></a>
 
-<a href="https://yxb-cn.github.io/scholarcanvas/" target="_blank" rel="noopener noreferrer">模板演示 ↗</a> · <a href="https://yxb-cn.github.io/" target="_blank" rel="noopener noreferrer">作者主页 ↗</a> <em>（即将上线）</em> · <a href="#快速开始">快速开始</a>
+<a href="https://yxb-cn.github.io/scholarcanvas/" target="_blank" rel="noopener noreferrer">模板演示 ↗</a> · <a href="https://yxb-cn.github.io/" target="_blank" rel="noopener noreferrer">作者主页 ↗</a> · <a href="#快速开始">快速开始</a>
 
 [![MIT License](https://img.shields.io/badge/license-MIT-173a5e.svg)](LICENSE) ![Pages URL](https://img.shields.io/badge/GitHub%20Pages-URL%20auto--detected-173a5e.svg) ![BibTeX](https://img.shields.io/badge/BibTeX-bulk%20import-173a5e.svg) ![Live Preview](https://img.shields.io/badge/preview-live%20desktop%20%2B%20mobile-173a5e.svg) ![One-click Editors](https://img.shields.io/badge/launchers-Windows%20%2B%20macOS-173a5e.svg)
 
