@@ -6,7 +6,9 @@
 
 _Edit publications, sections, pages, and files from one local workspace._
 
-[Template Demo](https://yxb-cn.github.io/scholarcanvas/) · [Author Website](https://yxb-cn.github.io/) _(coming soon)_ · [Quick Start](#quick-start)
+<a href="./README.zh-CN.md"><img src="https://img.shields.io/badge/language-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-173a5e.svg" alt="简体中文"></a>
+
+<a href="https://yxb-cn.github.io/scholarcanvas/" target="_blank" rel="noopener noreferrer">Template Demo ↗</a> · <a href="https://yxb-cn.github.io/" target="_blank" rel="noopener noreferrer">Author Website ↗</a> <em>(coming soon)</em> · <a href="#quick-start">Quick Start</a>
 
 [![MIT License](https://img.shields.io/badge/license-MIT-173a5e.svg)](LICENSE) ![Pages URL](https://img.shields.io/badge/GitHub%20Pages-URL%20auto--detected-173a5e.svg) ![BibTeX](https://img.shields.io/badge/BibTeX-bulk%20import-173a5e.svg) ![Live Preview](https://img.shields.io/badge/preview-live%20desktop%20%2B%20mobile-173a5e.svg) ![One-click Editors](https://img.shields.io/badge/launchers-Windows%20%2B%20macOS-173a5e.svg)
 
@@ -32,7 +34,7 @@ ScholarCanvas turns an academic homepage repository into a visual workspace: edi
 | **Long-form pages without leaving the editor** | Write or import Markdown, preview LaTeX, generate a table of contents, and upload images or PDFs into a dedicated folder for each entry. |
 | **Automatic GitHub Pages URL detection** | The deployment workflow detects the Pages address and repository subpath, then applies them to assets, canonical links, the sitemap, and search metadata. It supports both `username.github.io` and project sites. |
 | **One-click launchers for Windows and macOS** | Double-click `Open Homepage Editor.cmd` or `Open Homepage Editor.command`. The launcher installs dependencies on first use, identifies the current project folder, reuses its running editor or selects the next available local port, and opens the correct page automatically. |
-| **Guardrails before publishing** | Persistent, location-aware checks point directly to invalid URLs or emails, weak search descriptions, missing CV files, empty links, and other publishing problems. |
+| **Automatic checks before publishing** | Every save validates the content and inspects what Git can actually publish. The editor reports the eligible file count and size, confirms that local dependencies are excluded, and blocks unignored build folders, tracked secrets, or files that exceed GitHub’s limit. |
 
 ## Visual content editor
 
@@ -62,6 +64,7 @@ The editor includes:
 - import/export backups and validation for required fields, URLs, email addresses, search descriptions, and CV paths;
 - a Markdown editor with live preview for independent pages;
 - folder, ZIP, Markdown, image, and PDF imports with automatic asset paths;
+- an automatic GitHub upload check on every save, including the publishable file count and size, ignored local dependencies, secrets, and oversized files;
 - cleanup of generated profile images and page files that are no longer used.
 
 > **Privacy note:** “Hidden from page” is not private. Repository content, uploaded files, and `site-content.json` remain public after deployment.
@@ -118,6 +121,8 @@ In the editor:
 7. select **Save Changes**.
 
 The source of truth is `content/site-content.json`. The editor saves to that file and to the relevant folders under `public/`.
+
+Each save also runs **GitHub upload check**. When it reports **Ready**, commit everything shown in GitHub Desktop. Do not upload the entire local folder through GitHub’s web interface: installed packages and build caches stay on your computer and are excluded automatically.
 
 ### 4. Check and publish
 

@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
   "analytics": {
-    "enabled": false,
+    "enabled": true,
     "provider": "umami",
     "scriptUrl": "https://cloud.umami.is/script.js",
-    "websiteId": ""
+    "websiteId": "f5006059-2a0c-4e1b-bf84-e62845b7fd26"
   },
   "profile": {
-    "name": "Your Name",
-    "nameChinese": "",
+    "name": "Xuanbin Yang",
+    "nameChinese": "杨轩滨",
     "alternateNames": [
-      "Your Name",
-      "Name, Your"
+      "Yang Xuanbin",
+      "杨轩滨"
     ],
-    "initials": "YN",
-    "photoPath": "/images/profile-demo-about.webp",
-    "navPhotoPath": "/images/profile-demo-nav.webp",
-    "originalPhotoPath": "/images/profile-demo-original.webp",
+    "initials": "XB Y",
+    "photoPath": "/images/profile-about-b6c287ff62c5.webp",
+    "navPhotoPath": "/images/profile-nav-21721c795b78.webp",
+    "originalPhotoPath": "/images/profile-original-5e47c871fa49.png",
     "photoCrops": {
       "about": {
-        "zoom": 1,
-        "x": 0.5,
-        "y": 0.5
+        "zoom": 1.45,
+        "x": 0.4077380952380954,
+        "y": 0.7005262826818259
       },
       "nav": {
-        "zoom": 1,
-        "x": 0.5,
-        "y": 0.46
+        "zoom": 3,
+        "x": 0.19613486842105265,
+        "y": 0.46815043020892877
       }
     },
     "facts": [
@@ -36,44 +36,50 @@
       },
       {
         "label": "Job Market",
-        "value": "2026-27 · Available July 2027"
+        "value": "2026–27 · Available July 2027"
       },
       {
         "label": "Languages",
-        "value": "English · Mandarin"
+        "value": "Chinese · English"
       }
     ],
-    "position": "Ph.D. Candidate in Economics",
-    "affiliation": "Department of Economics · Example University",
+    "position": "Ph.D. Candidate in Finance",
+    "affiliation": "School of Finance · Nankai University",
     "bio": [
-      "I am a Ph.D. candidate in Economics at **Example University**, advised by [Prof. Jordan Lee](https://example.com/advisor). I expect to complete my degree in 2027. Before beginning my doctoral studies, I earned an M.Sc. in Economics from **Example Institute of Social Science** and a bachelor's degree from **Example College**.",
-      "My research sits at the intersection of applied econometrics, asset pricing, and machine learning. I study how high-dimensional information, changing economic conditions, and market frictions shape forecasts and financial decisions. My current work develops interpretable statistical methods and evaluates their performance in real-time empirical settings.",
-      "I welcome conversations with researchers and students working on related questions. Please feel free to get in touch if you would like to exchange ideas, discuss a project, or explore a potential collaboration."
+      "Hi, I am a Ph.D. candidate in Finance, specializing in financial econometrics, at the **School of Finance, Nankai University**, advised by [Prof. Tingting Cheng](https://sites.google.com/site/tingtingcheng2014/home), with an expected graduation date of June 2027. I am currently a visiting Ph.D. researcher in the **Department of Econometrics and Business Statistics, Monash Business School, Monash University**, with [Prof. Jiti Gao](https://research.monash.edu/en/persons/jiti-gao/) as my host advisor, through a joint training program funded by the China Scholarship Council. I received my bachelor’s degree in Finance from **Southwestern University of Finance and Economics**, where I studied in the Finance and Artificial Intelligence program and graduated with honors.",
+      "My research interests lie at the intersection of empirical asset pricing, financial machine learning, and time-series econometrics. I study the predictability of stock returns, dividend growth, and macro-financial variables, with particular attention to high-dimensional factor models, time-varying relationships, mixed-persistence time series, and nonparametric methods. A central theme of my research is how economic structure can be incorporated into modern statistical and machine-learning methods to improve their interpretability, reliability, and economic relevance.",
+      "Some of my papers are currently under revision or review at leading journals in finance and econometrics and at major machine-learning conferences. I welcome conversations and potential collaborations with researchers and students who share similar interests. Please feel free to contact me if you would like to exchange ideas, discuss related research, or explore opportunities to work together."
     ],
     "interests": [
-      "Applied Econometrics",
-      "Empirical Asset Pricing",
+      "Financial Econometrics",
+      "Empirical Asset pricing",
       "Time-Series Analysis",
+      "Nonparametric Statistics",
       "Machine Learning",
-      "Forecasting"
+      "Quantitative Investment"
     ],
-    "lastUpdated": "27 July 2026",
-    "cvPath": "/documents/Your_Name_CV.pdf",
+    "lastUpdated": "25 July 2026",
+    "cvPath": "/documents/Xuanbin_Yang_CV.pdf",
     "publicationNote": "Coauthors are shown as (with ...). ✉ denotes a corresponding author.",
     "copyrightYear": "2026",
-    "footerNote": "This website contains fictional demonstration content.",
+    "footerNote": "Thank you for visiting.",
     "siteUrl": "",
-    "metaTitle": "Your Name | Academic Homepage",
-    "metaDescription": "Your Name is a fictional Ph.D. candidate whose profile demonstrates the editable academic homepage template."
+    "metaTitle": "Xuanbin Yang (杨轩滨) | Finance Ph.D. Candidate",
+    "metaDescription": "Xuanbin Yang, also written as Yang Xuanbin and 杨轩滨, is a Ph.D. candidate in Finance at Nankai University, working on financial econometrics, empirical asset pricing, and machine learning."
   },
   "contacts": [
     {
       "label": "Email",
       "entries": [
         {
-          "text": "your.name@example.com",
-          "url": "mailto:your.name@example.com",
-          "copyValue": "your.name@example.com"
+          "text": "xuanbin.yang@hotmail.com",
+          "url": "xuanbin.yang@hotmail.com",
+          "copyValue": "xuanbin.yang@hotmail.com"
+        },
+        {
+          "text": "xuanbin.yang@mail.nankai.edu.cn",
+          "url": "xuanbin.yang@mail.nankai.edu.cn",
+          "copyValue": "xuanbin.yang@mail.nankai.edu.cn"
         }
       ]
     },
@@ -81,9 +87,9 @@
       "label": "Google Scholar",
       "entries": [
         {
-          "text": "https://example.com/google-scholar",
-          "url": "https://example.com/google-scholar",
-          "copyValue": "https://example.com/google-scholar"
+          "text": "https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=uA46vx4AAAAJ",
+          "url": "https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=uA46vx4AAAAJ",
+          "copyValue": "https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=uA46vx4AAAAJ"
         }
       ]
     },
@@ -91,9 +97,9 @@
       "label": "SSRN",
       "entries": [
         {
-          "text": "https://example.com/ssrn",
-          "url": "https://example.com/ssrn",
-          "copyValue": "https://example.com/ssrn"
+          "text": "https://papers.ssrn.com/Sol3/Cf_Dev/AbsByAuth.cfm?per_id=5484325",
+          "url": "https://papers.ssrn.com/Sol3/Cf_Dev/AbsByAuth.cfm?per_id=5484325",
+          "copyValue": "https://papers.ssrn.com/Sol3/Cf_Dev/AbsByAuth.cfm?per_id=5484325"
         }
       ]
     },
@@ -101,9 +107,9 @@
       "label": "GitHub",
       "entries": [
         {
-          "text": "https://example.com/github",
-          "url": "https://example.com/github",
-          "copyValue": "https://example.com/github"
+          "text": "https://github.com/yxb-cn",
+          "url": "https://github.com/yxb-cn",
+          "copyValue": "https://github.com/yxb-cn"
         }
       ]
     },
@@ -111,9 +117,9 @@
       "label": "ORCID",
       "entries": [
         {
-          "text": "https://example.com/orcid",
-          "url": "https://example.com/orcid",
-          "copyValue": "https://example.com/orcid"
+          "text": "https://orcid.org/0009-0004-9982-4436",
+          "url": "https://orcid.org/0009-0004-9982-4436",
+          "copyValue": "https://orcid.org/0009-0004-9982-4436"
         }
       ]
     }
@@ -156,7 +162,11 @@
       "showInNavigation": true,
       "navigationPlacement": "top",
       "template": "publicationGroups",
-      "dataKey": "publicationGroups"
+      "dataKey": "publicationGroups",
+      "fieldLabels": {
+        "papers.abstract": "Abstract (supports Markdown and LaTeX: **bold**, *italic*, $...$, $$...$$)",
+        "title": "Title"
+      }
     },
     {
       "id": "projects",
@@ -184,7 +194,7 @@
       "navigationLabel": "Presentations",
       "showOnHomepage": true,
       "showInNavigation": true,
-      "navigationPlacement": "more",
+      "navigationPlacement": "top",
       "template": "talks",
       "dataKey": "talks"
     },
@@ -204,7 +214,7 @@
       "navigationLabel": "Blog",
       "showOnHomepage": true,
       "showInNavigation": true,
-      "navigationPlacement": "more",
+      "navigationPlacement": "top",
       "template": "pageCollection",
       "fieldLabels": {},
       "content": [
@@ -221,49 +231,49 @@
   ],
   "education": [
     {
-      "period": "2024 - Present",
-      "degree": "Ph.D. in Economics",
-      "institution": "Department of Economics, Example University",
-      "details": "Advisor: Prof. Jordan Lee. Fields: econometrics, finance, and machine learning."
+      "period": "2026 — Present",
+      "degree": "Visiting Ph.D. in Econometrics",
+      "institution": "Department of Econometrics and Business Statistics, Monash Business School, Monash University",
+      "details": "Advisor: Prof. Jiti Gao. Fields: nonparametric econometrics, time-series analysis."
     },
     {
-      "period": "2022 - 2024",
-      "degree": "M.Sc. in Economics",
-      "institution": "Example Institute of Social Science",
-      "details": "Thesis: Forecasting with high-dimensional macroeconomic data."
+      "period": "2022 — Present",
+      "degree": "Ph.D. in Finance",
+      "institution": "School of Finance, Nankai University",
+      "details": "Advisor: Prof. Tingting Cheng. Fields: financial econometrics, asset pricing, and machine learning."
     },
     {
-      "period": "2018 - 2022",
-      "degree": "Bachelor's Degree in Economics",
-      "institution": "Example College",
-      "details": "Graduated with honors."
+      "period": "2018 — 2022",
+      "degree": "Bachelor’s Degree in Finance",
+      "institution": "School of Finance, Southwestern University of Finance and Economics",
+      "details": "Finance and Artificial Intelligence program; Graduated with honors."
     }
   ],
   "researchTopics": [
     {
       "number": "01",
-      "title": "Predictability in Financial Markets",
-      "text": "I study when financial returns and macroeconomic variables are predictable, with particular attention to real-time information, forecast evaluation, and economic value."
+      "title": "Stock Return Predictability",
+      "text": "I study when and why stock returns are predictable, focusing primarily on time-series predictability while increasingly exploring predictability in the cross section of returns. My work examines present-value restrictions, return decomposition, market expectations, and the economic value of return forecasts."
     },
     {
       "number": "02",
-      "title": "High-Dimensional Factor Models",
-      "text": "I develop estimation and inference for latent-factor and factor-augmented models when predictors are numerous, persistent, or weakly informative."
+      "title": "Latent Factor Models",
+      "text": "I develop estimation and inference for latent factor and factor-augmented models in high-dimensional settings, including mixed-persistence data, weak factors, and discrete-response outcomes."
     },
     {
       "number": "03",
-      "title": "Time-Varying Econometrics",
-      "text": "I examine models whose coefficients change over time and use sieve and kernel methods to distinguish gradual evolution from abrupt structural change."
+      "title": "Time-Varying and Nonstationary Econometrics",
+      "text": "I study models whose coefficients or data-generating processes evolve over time, developing theory and applications based on sieve methods, kernel estimation, and tests for smooth or abrupt structural change."
     },
     {
       "number": "04",
-      "title": "Interpretable Machine Learning",
-      "text": "I design machine-learning methods that preserve economic structure while improving predictive accuracy and robustness."
+      "title": "Machine Learning for Asset Pricing",
+      "text": "I develop interpretable machine-learning methods for cross-sectional asset pricing, including supervised dimension reduction and nonlinear representation learning for constructing economically meaningful and tradable factors."
     },
     {
       "number": "05",
-      "title": "Forecast Combination",
-      "text": "I study how multiple models and data sources can be combined under uncertainty, instability, and limited samples."
+      "title": "Macro-Financial Forecasting",
+      "text": "I study the prediction of inflation, business-cycle turning points, and other macro-financial outcomes, emphasizing forecast uncertainty, economic interpretation, and out-of-sample performance."
     }
   ],
   "publicationGroups": [
@@ -274,35 +284,41 @@
         {
           "showOnHomepage": true,
           "type": "Journal",
-          "year": "2025",
-          "title": "Information Frictions and Regional Asset Prices",
-          "url": "https://example.com/papers/information-frictions",
+          "year": "2024",
+          "title": "Economic policy uncertainty and municipal corporate bonds credit spreads: Evidence from China",
+          "url": "https://doi.org/10.1016/j.frl.2024.106170",
           "authors": [
             {
-              "name": "Jordan Lee",
+              "name": "Tingting Cheng",
               "self": false,
               "corresponding": true
             },
             {
-              "name": "Your Name",
+              "name": "Liping Qiu",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Wenya Lv",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Xuanbin Yang",
               "self": true,
+              "corresponding": false
+            },
+            {
+              "name": "Gang Yang",
+              "self": false,
               "corresponding": false
             }
           ],
-          "venue": "Journal of Applied Market Studies",
-          "note": "Vol. 12, No. 3, pp. 101-129",
-          "bibtex": "@article{lee2025information,\n  title = {Information Frictions and Regional Asset Prices},\n  author = {Lee, Jordan and Name, Your},\n  journal = {Journal of Applied Market Studies},\n  volume = {12},\n  number = {3},\n  pages = {101--129},\n  year = {2025}\n}",
-          "abstract": "This fictional demonstration paper studies how delayed information transmission affects regional asset prices. The example shows how a publication can display authors, journal information, a BibTeX record, links, and an abstract containing inline notation such as $R^2$.",
-          "links": [
-            {
-              "label": "Paper",
-              "url": "https://example.com/papers/information-frictions.pdf"
-            },
-            {
-              "label": "Code",
-              "url": "https://example.com/code/information-frictions"
-            }
-          ]
+          "venue": "Finance Research Letters",
+          "note": "",
+          "bibtex": "@article{cheng2024economic,\n  title = {Economic Policy Uncertainty and Municipal Corporate Bonds Credit Spreads: Evidence from China},\n  author = {Cheng, Tingting and Qiu, Liping and Lv, Wenya and Yang, Xuanbin and Yang, Gang},\n  journal = {Finance Research Letters},\n  volume = {69},\n  pages = {106170},\n  year = {2024},\n  doi = {10.1016/j.frl.2024.106170}\n}",
+          "abstract": "This study investigates the influence of economic policy uncertainty on municipal corporate bonds credit spreads in China using data from 2010 to 2022. We find a significant negative nexus between changes in economic policy uncertainty and changes in credit spreads. This finding remains robust after addressing potential endogeneity issues. Mechanism analysis reveals that heightened economic policy uncertainty triggers a \"flights to safety\" phenomenon, leading to higher bond liquidity, which in turn results in lower financing costs and smaller credit spreads. This effect is more pronounced for municipal corporates with higher credit ratings and during periods following default events.",
+          "links": []
         }
       ]
     },
@@ -313,31 +329,94 @@
         {
           "showOnHomepage": true,
           "type": "Journal",
-          "year": "2026",
-          "title": "Learning from Sparse Macroeconomic Signals",
-          "url": "https://example.com/papers/sparse-signals",
+          "year": "2025",
+          "title": "Predicting the Predictable: Decomposing and Forecasting Stock Returns in a Data-rich Environment",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5368119",
           "authors": [
             {
-              "name": "Your Name",
+              "name": "Tingting Cheng",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Xuanbin Yang",
               "self": true,
               "corresponding": true
             },
             {
-              "name": "Riley Chen",
+              "name": "Albert Bo Zhao",
               "self": false,
               "corresponding": false
             }
           ],
-          "venue": "Review of Quantitative Economics",
-          "note": "Revise & Resubmit",
+          "venue": "Management Science",
+          "note": "Resubmitted (First decision: Reject and Resubmit)",
           "bibtex": "",
-          "abstract": "We develop a structured forecasting procedure for extracting a small number of economically interpretable signals from a high-dimensional macroeconomic panel. Simulated results illustrate how the method behaves when predictors are persistent and noisy.",
-          "links": [
+          "abstract": "We revisit aggregate stock return predictability from a target-design perspective. The difficulty of beating the historical mean may reflect not only weak predictors or inadequate algorithms, but also the fact that aggregate returns pool components with different signal-to-noise ratios. We propose a factor-augmented sum-of-the-parts (FA-SOP) framework that directs high-dimensional macroeconomic information to valuation-multiple growth, the component where present-value logic suggests macroeconomic information should be most visible, while retaining parsimonious forecasts for lower-signal components. Applied to S&P 500 returns from 1960 to 2022, FA-SOP delivers robust out-of-sample statistical and economic gains over the historical mean, univariate regressions, direct factor-augmented return regressions, and traditional SOP benchmarks. The key comparison is that the same underlying macroeconomic panel performs poorly when used to forecast aggregate returns directly, but becomes useful when routed through valuation adjustment. Machine learning extensions show that this pattern is not specific to the linear factor specification, and simulations with known expected returns confirm that FA-SOP better recovers time-varying expected returns without excessive forecast variance. The results support a broader \"predicting the predictable\" principle for data-rich empirical asset pricing.",
+          "links": []
+        },
+        {
+          "showOnHomepage": true,
+          "type": "Journal",
+          "year": "2026",
+          "title": "Binary Response Forecasting under a Factor-Augmented Framework",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5359505",
+          "authors": [
             {
-              "label": "Draft",
-              "url": "https://example.com/papers/sparse-signals.pdf"
+              "name": "Tingting Cheng",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Jiachen Cong",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Fei Liu",
+              "self": false,
+              "corresponding": true
+            },
+            {
+              "name": "Xuanbin Yang",
+              "self": true,
+              "corresponding": false
             }
-          ]
+          ],
+          "venue": "Journal of Applied Econometrics",
+          "note": "Reject and Resubmit",
+          "bibtex": "",
+          "abstract": "In this paper, we propose a novel factor-augmented forecasting regression model (FAR) tailored to binary outcomes, filling a key gap in the existing FAR literature. The model combines high-dimensional factor extraction with maximum likelihood estimation, and we establish its asymptotic theory under general dependence conditions.  Monte Carlo simulation results show that the proposed estimation method performs very well in finite samples. We further demonstrate the usefulness of the proposed model through an application to  U.S. recession forecasting. The proposed model consistently outperforms conventional Probit regression and several machine learning methods across both in-sample and out-of-sample exercises, by effectively utilizing high-dimensional information through latent factors.",
+          "links": []
+        },
+        {
+          "showOnHomepage": true,
+          "type": "Journal",
+          "year": "2026",
+          "title": "Market Expectations in the Cross-Section of Leading Present Values",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6964418",
+          "authors": [
+            {
+              "name": "Mengmeng Guo",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Qiuhua Xu",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Xuanbin Yang",
+              "self": true,
+              "corresponding": true
+            }
+          ],
+          "venue": "Journal of Financial Econometrics",
+          "note": "Major Revision",
+          "bibtex": "",
+          "abstract": "We revisit the cross-sectional present-value framework of Kelly and Pruitt (2013) and show that it remains robust once heterogeneous information diffusion is taken into account. We propose a LASSO-PLS approach that uses LASSO to identify real-time information leaders, followed by factor extraction via partial least squares. By filtering out stale signals from slow-moving assets, our method restores out-of-sample market return predictability, improving the monthly $R^2_{oos}$ to 1.1% over 1930--2024, while remaining robust across portfolio granularities, sample splits, and alternative specifications. Our results demonstrate how incorporating economically motivated market structure can enhance the reliability of supervised learning methods in asset pricing.",
+          "links": []
         }
       ]
     },
@@ -349,24 +428,34 @@
           "showOnHomepage": true,
           "type": "Journal",
           "year": "2026",
-          "title": "Nonlinear Factor Models with Shifting Loadings",
-          "url": "https://example.com/papers/shifting-loadings",
+          "title": "Extracting Predictability: A Time-Varying Factor-Augmented Approach under Mixed Persistence",
+          "url": "",
           "authors": [
             {
-              "name": "Sam Rivera",
+              "name": "Tingting Cheng",
               "self": false,
               "corresponding": false
             },
             {
-              "name": "Your Name",
+              "name": "Jiti Gao",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Yayi Yan",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Xuanbin Yang",
               "self": true,
-              "corresponding": true
+              "corresponding": false
             }
           ],
-          "venue": "Econometric Methods",
+          "venue": "Journal of Econometrics",
           "note": "Under review",
           "bibtex": "",
-          "abstract": "This fictional paper introduces a nonlinear factor model with smoothly changing loadings and studies estimation, inference, and forecast performance in finite samples.",
+          "abstract": "This paper develops a time-varying factor-augmented forecasting model designed to extract predictable variation in the target variable when predictors exhibit mixed persistence. The framework accommodates stationary, nonstationary, and a mixture of observable and latent predictors, and allows latent predictors to follow either static or dynamic factor structures, thereby nesting many classical and new models as special cases. We develop an easy-to-implement sieve estimation procedure for the time-varying coefficients, establish its large-sample properties, and construct prediction intervals for the forecasts. Simulation studies show that the proposed methods perform well in finite samples. In an empirical application to U.S. inflation forecasting, the proposed model performs favorably relative to several competitors. Further analyses indicate that latent factors remain informative even when inflation exhibits autoregressive dynamics, since they absorb predictable variation that would otherwise be left in the autoregressive model errors.",
           "links": []
         }
       ]
@@ -377,22 +466,71 @@
       "papers": [
         {
           "showOnHomepage": true,
-          "type": "Working Paper",
+          "type": "Journal",
           "year": "2026",
-          "title": "Forecast Combination under Structural Change",
-          "url": "https://example.com/papers/forecast-combination",
+          "title": "Factor-Augmented Bootstrap Tests of Return and Dividend-Growth Predictability",
+          "url": "",
+          "authors": [],
+          "venue": "",
+          "note": "Manuscript in preparation",
+          "bibtex": "",
+          "abstract": "Within a present-value-constrained state-space framework, this paper investigates the predictability of stock returns and dividend growth by incorporating classical financial predictors and high-dimensional macroeconomic factors into an extended present-value model. We conduct model estimation and statistical inference through Kalman filtering, maximum likelihood estimation, and bootstrap likelihood ratio tests. Crucially, we establish the asymptotic consistency of the bootstrap likelihood ratio test when employing estimated factors. This study aims to distinguish purely statistical predictive power from economically meaningful predictability that conforms to present-value constraints, thereby providing new empirical evidence to understand the economic sources of stock return predictability.",
+          "links": []
+        },
+        {
+          "showOnHomepage": true,
+          "type": "Conference",
+          "year": "2026",
+          "title": "FISTRA: A Financial-Factor-Informed Set Transformer for Learning Tradable Factors from Stock Cross-Sections",
+          "url": "",
+          "authors": [],
+          "venue": "",
+          "note": "Manuscript in preparation",
+          "bibtex": "",
+          "abstract": "Deep factor models face a persistent trade-off between flexibility and interpretability: expressive latent representations can improve stock return prediction, but their factors often do not correspond to portfolios that can be formed and audited in practice. We propose FISTRA (A **F**inancial-factor-**I**nformed **S**et Transformer for learning **TRA**dable factors), a conditional factor model that reconciles these goals by learning nonlinear cross-sectional structure while defining every latent factor as the return of an explicit stock portfolio. Rather than discarding established financial knowledge, FISTRA retains established financial factors in the return equation and learns complementary tradable factors beyond their span. It encodes each stock's lagged history with temporal convolutions and uses induced set attention to model interactions across the stock cross-section. State-conditioned factor queries and a differentiable allocation layer then produce neutral, unit-gross portfolio weights before current returns are observed. The resulting factors are therefore replicable and auditable, while separate residual networks estimate characteristic-dependent exposures and strictly historical factor-return means generate out-of-sample predictions. Extensive experiments on real United States (U.S.) stock market data show that FISTRA outperforms state-of-the-art factor models in stock return prediction and investment performance. Further analyses demonstrate that its learned portfolios contain incremental information beyond established financial factors, achieving a favorable balance between predictive flexibility and operational interpretability.",
+          "links": []
+        },
+        {
+          "showOnHomepage": false,
+          "type": "Journal",
+          "year": "2026",
+          "title": "Testing Smooth and Abrupt Structural Change in Factor-Augmented Regressions",
+          "url": "",
+          "authors": [],
+          "venue": "",
+          "note": "Manuscript in preparation",
+          "bibtex": "",
+          "abstract": "",
+          "links": [
+            {
+              "label": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "showOnHomepage": false,
+          "type": "Journal",
+          "year": "2026",
+          "title": "Time-varying Scaled PCA: A Nonparametric Method for Adaptive Factor Screening",
+          "url": "",
           "authors": [
             {
-              "name": "Your Name",
-              "self": true,
+              "name": "",
+              "self": false,
               "corresponding": false
             }
           ],
           "venue": "",
           "note": "Manuscript in preparation",
           "bibtex": "",
-          "abstract": "This project studies forecast combinations that adapt to gradual and abrupt changes in predictive relationships. The abstract demonstrates Markdown emphasis, for example **adaptive weighting**, and display mathematics: $$\\widehat{y}_{t+1}=\\sum_{m=1}^{M} w_{m,t}\\widehat{y}_{m,t+1}.$$",
-          "links": []
+          "abstract": "",
+          "links": [
+            {
+              "label": "",
+              "url": ""
+            }
+          ]
         }
       ]
     }
@@ -400,92 +538,109 @@
   "projects": [
     {
       "type": "Research Project",
-      "period": "Jan 2025 - Dec 2027",
-      "title": "Data-Rich Forecasting under Economic Instability",
-      "funder": "Example Research Foundation",
-      "grantNumber": "Grant No. DEMO-2025-01",
-      "principalInvestigator": "PI: Prof. Jordan Lee",
-      "role": "Research assistant"
+      "period": "Jan 2022 – Dec 2025",
+      "title": "Theory and Applications of Varying-Coefficient Factor-Augmented Models in the Context of Big Data",
+      "funder": "National Natural Science Foundation of China (NSFC), General Program",
+      "grantNumber": "Grant No. 72173068",
+      "principalInvestigator": "PI: Prof. Tingting Cheng",
+      "role": "Project participant"
     },
     {
       "type": "Fellowship",
-      "period": "Sep 2024 - Jun 2027",
-      "title": "Graduate Research Fellowship",
-      "funder": "Example University",
-      "grantNumber": "Three-year fellowship",
-      "principalInvestigator": "Host department: Economics",
-      "role": "Fellowship recipient"
+      "period": "Mar 2026 – Mar 2027",
+      "title": "CSC Scholarship for Visiting Ph.D. Study in Australia",
+      "funder": "China Scholarship Council (CSC)",
+      "grantNumber": "12-month scholarship",
+      "principalInvestigator": "Host institution: Monash University",
+      "role": "Scholarship recipient"
     }
   ],
   "codeProjects": [
     {
       "type": "Replication",
-      "title": "Replication of a Forecast-Combination Study",
-      "description": "A compact example repository that reproduces simulation tables and figures from a fictional forecasting paper.",
+      "title": "Replication of Bai (2004), Journal of Econometrics",
+      "description": "R replication of Bai's (2004) estimation of cross-sectional common stochastic trends in nonstationary panel data, reproducing the simulation results and reimplementing the empirical analysis with U.S. Bureau of Economic Analysis employment and GNP data.",
       "technologies": [
         "R",
-        "Quarto",
+        "R Markdown",
         "LaTeX"
       ],
-      "url": "https://example.com/github/forecast-replication"
-    },
-    {
-      "type": "Tool",
-      "title": "Panel Forecasting Toolkit",
-      "description": "A demonstration package for rolling forecasts, model comparison, and reproducible output.",
-      "technologies": [
-        "Python",
-        "pandas",
-        "scikit-learn"
-      ],
-      "url": "https://example.com/github/panel-forecasting"
+      "url": "https://github.com/yxb-cn/Replication_Bai-Jushan_2004_JoE"
     }
   ],
   "talks": [
     {
       "date": "Jun 2026",
-      "event": "Annual Conference on Data and Economic Forecasting",
+      "event": "CASE International Workshop on Machine Learning and Applications in Financial Econometrics",
       "contribution": "Oral presentation",
-      "location": "Example University · Example City"
+      "location": "Southwestern University of Finance and Economics · Chengdu, China"
     },
     {
-      "date": "Nov 2025",
-      "event": "Workshop on Financial Econometrics",
-      "contribution": "Invited presentation",
-      "location": "Example Institute · Example City"
+      "date": "Dec 2025",
+      "event": "6th Workshop on Big Data Econometrics: Theory and Applications",
+      "contribution": "Oral presentation",
+      "location": "Zhongnan University of Economics and Law · Wuhan, China"
     },
     {
-      "date": "May 2025",
-      "event": "Graduate Research Conference in Economics",
-      "contribution": "Poster presentation · Best Student Poster Award",
-      "location": "Example College · Example City"
+      "date": "Oct 2025",
+      "event": "22nd Chinese Finance Annual Meeting",
+      "contribution": "Oral presentation",
+      "location": "Nanjing University · Nanjing, China"
+    },
+    {
+      "date": "Jul 2025",
+      "event": "2025 International Conference on Econometrics and Statistics (ICES 2025)",
+      "contribution": "Oral presentation · Best Student Oral Presentation Award",
+      "location": "Harbin Institute of Technology · Harbin, China"
+    },
+    {
+      "date": "Dec 2024",
+      "event": "40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
+      "contribution": "Oral presentation",
+      "location": "Shanghai University of Finance and Economics · Shanghai, China"
+    },
+    {
+      "date": "Jul 2024",
+      "event": "International Workshop on Financial Econometrics: Applications and Practice",
+      "contribution": "Oral presentation",
+      "location": "Nankai University · Tianjin, China"
+    },
+    {
+      "date": "Jun 2024",
+      "event": "International Chinese Statistical Association (ICSA) 2024 China Conference",
+      "contribution": "Oral presentation",
+      "location": "Zhongnan University of Economics and Law · Wuhan, China"
+    },
+    {
+      "date": "May 2024",
+      "event": "10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management",
+      "contribution": "Oral presentation",
+      "location": "Renmin University of China · Beijing, China"
+    },
+    {
+      "date": "Dec 2023",
+      "event": "National Academic Forum for Ph.D. Students in Quantitative Economics",
+      "contribution": "Oral presentation",
+      "location": "Xiamen University · Xiamen, China"
     }
   ],
   "serviceAndSkills": [
     {
       "title": "Referee Service",
       "items": [
-        "Example Journal of Applied Economics",
-        "Example Conference on Data Science"
+        "Econometric Reviews",
+        "Finance Research Letters",
+        "Economic Modelling"
       ]
     },
     {
       "title": "Software",
       "items": [
-        "Python",
         "R",
-        "Stata",
+        "Python",
         "MATLAB",
-        "$\\LaTeX$"
-      ]
-    },
-    {
-      "title": "Methods",
-      "items": [
-        "Time-series econometrics",
-        "Panel data",
-        "Machine learning",
-        "Nonparametric methods"
+        "$\\LaTeX$",
+        "Stata"
       ]
     }
   ]

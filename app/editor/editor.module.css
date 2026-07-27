@@ -118,6 +118,91 @@
   font-size: 12px;
 }
 
+.repositoryPanel {
+  max-width: 1440px;
+  margin: 0 auto 18px;
+  padding: 12px 14px;
+  border: 1px solid #b9c9bd;
+  border-radius: 3px;
+  background: #f6faf7;
+  color: #33473a;
+  font-size: 11px;
+}
+
+.repositoryReady {
+  border-color: #a9c4b1;
+  background: #f4faf6;
+}
+
+.repositoryBlocked {
+  border-color: #d7a9a9;
+  background: #fff7f7;
+}
+
+.repositorySummary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6px 16px;
+  margin-bottom: 4px;
+}
+
+.repositorySummary strong {
+  font-size: 12px;
+}
+
+.repositorySummary span {
+  color: #486452;
+  font-weight: 700;
+}
+
+.repositoryPanel > p {
+  line-height: 1.45;
+}
+
+.repositoryPanel ul {
+  display: grid;
+  gap: 7px;
+  margin: 9px 0 0;
+  padding: 9px 0 0;
+  border-top: 1px solid rgba(88, 111, 95, 0.18);
+  list-style: none;
+}
+
+.repositoryPanel li {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+}
+
+.repositoryPanel li > span {
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.repositoryPanel code {
+  color: #263b2d;
+  font-size: 11px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.repositoryPanel li p {
+  margin-top: 2px;
+  color: #3d4c42;
+  line-height: 1.45;
+}
+
+.repositoryIssueError {
+  color: #a34040;
+}
+
+.repositoryIssueWarning {
+  color: #9a6b24;
+}
+
 .validationPanel {
   max-width: 1440px;
   margin: 0 auto 18px;

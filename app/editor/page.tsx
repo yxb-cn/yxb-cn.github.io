@@ -36,13 +36,38 @@ type JsonValue = JsonPrimitive | JsonObject | JsonValue[];
 type JsonObject = { [key: string]: JsonValue };
 type FieldPath = Array<string | number>;
 type MovePaper = (sourcePath: FieldPath, targetPath: FieldPath) => void;
+type RepositoryIssue = {
+  level: "error" | "warning";
+  path: string;
+  message: string;
+};
+type RepositoryCheck = {
+  checkedAt: string;
+  gitRepository: boolean;
+  ready: boolean;
+  includedFiles: number;
+  includedBytes: number;
+  ignoredLocalDirectories: string[];
+  issues: RepositoryIssue[];
+};
 
 const endpoint = "/__content-editor";
 const photoEndpoint = "/__profile-photo";
 const pageFileEndpoint = "/__page-asset";
+const repositoryCheckEndpoint = "/__repository-check";
 const maximumPhotoSize = 5 * 1024 * 1024;
 const paperDragType = "application/x-homepage-publication";
 const pageSlugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+function formatFileSize(bytes: number) {
+  if (bytes < 1024) {
+    return `${bytes} B`;
+  }
+  if (bytes < 1024 * 1024) {
+    return `${(bytes / 1024).toFixed(1)} KB`;
+  }
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
 
 const sectionLabels: Record<string, string> = {
   siteSettings: "Site Settings",
@@ -2677,6 +2702,8 @@ export default function ContentEditor() {
   const [validationIssues, setValidationIssues] = useState<ValidationIssue[]>(
     () => validateSiteContent(initialContent),
   );
+  const [repositoryCheck, setRepositoryCheck] =
+    useState<RepositoryCheck | null>(null);
   const importInputRef = useRef<HTMLInputElement>(null);
   const bibtexInputRef = useRef<HTMLInputElement>(null);
   const previewFrameRef = useRef<HTMLIFrameElement>(null);
@@ -3060,6 +3087,40 @@ export default function ContentEditor() {
     return issues;
   }
 
+  async function inspectRepository() {
+    try {
+      const response = await fetch(repositoryCheckEndpoint, {
+        cache: "no-store",
+      });
+      const result = (await response.json()) as RepositoryCheck & {
+        error?: string;
+      };
+      if (!response.ok) {
+        throw new Error(result.error ?? "The repository could not be checked.");
+      }
+      return result;
+    } catch (error) {
+      return {
+        checkedAt: new Date().toISOString(),
+        gitRepository: false,
+        ready: true,
+        includedFiles: 0,
+        includedBytes: 0,
+        ignoredLocalDirectories: [],
+        issues: [
+          {
+            level: "warning" as const,
+            path: ".git",
+            message:
+              error instanceof Error
+                ? error.message
+                : "The repository could not be checked.",
+          },
+        ],
+      };
+    }
+  }
+
   async function importBackup(file: File | null) {
     if (!file) {
       return;
@@ -3156,33 +3217,59 @@ export default function ContentEditor() {
       return;
     }
 
+    setSaving(true);
+    setMessage("Checking content and GitHub upload safety…");
     const migratedDraft = ensureMainSections(draft);
     const issues = await collectValidationIssues(migratedDraft);
+    const nextRepositoryCheck = await inspectRepository();
     setValidationIssues(issues);
+    setRepositoryCheck(nextRepositoryCheck);
     const errors = issues.filter((issue) => issue.level === "error");
     if (errors.length > 0) {
       setMessage(`Fix ${errors.length} validation error${errors.length === 1 ? "" : "s"} before saving`);
+      setSaving(false);
+      return;
+    }
+    const repositoryErrors = nextRepositoryCheck.issues.filter(
+      (issue) => issue.level === "error",
+    );
+    if (repositoryErrors.length > 0) {
+      setMessage(
+        `Save blocked — fix ${repositoryErrors.length} GitHub upload risk${
+          repositoryErrors.length === 1 ? "" : "s"
+        }`,
+      );
+      setSaving(false);
       return;
     }
     const warnings = issues.filter((issue) => issue.level === "warning");
+    const repositoryWarnings = nextRepositoryCheck.issues.filter(
+      (issue) => issue.level === "warning",
+    );
     if (
-      warnings.length > 0 &&
+      warnings.length + repositoryWarnings.length > 0 &&
       !window.confirm(
-        `The editor found ${warnings.length} warning${
-          warnings.length === 1 ? "" : "s"
+        `The editor found ${warnings.length + repositoryWarnings.length} warning${
+          warnings.length + repositoryWarnings.length === 1 ? "" : "s"
         }:\n\n${warnings
           .map(
             (issue) =>
               `• ${validationLocation(issue, migratedDraft).label}\n  ${issue.message}`,
           )
+          .concat(
+            repositoryWarnings.map(
+              (issue) =>
+                `• GitHub upload · ${issue.path}\n  ${issue.message}`,
+            ),
+          )
           .join("\n")}\n\nSave anyway?`,
       )
     ) {
       setMessage("Save paused — review the validation warnings");
+      setSaving(false);
       return;
     }
 
-    setSaving(true);
     setMessage("Saving…");
 
     try {
@@ -3297,16 +3384,23 @@ export default function ContentEditor() {
         setNavPhotoCrop(defaultCrop());
       }
       setValidationIssues(issues);
+      const savedRepositoryCheck = await inspectRepository();
+      setRepositoryCheck(savedRepositoryCheck);
       const removedCount =
         (result.removedImages?.length ?? 0) +
         (result.removedPageFiles ?? 0) +
         (result.removedPageAssets ?? 0);
+      const uploadSummary = savedRepositoryCheck.gitRepository
+        ? ` · GitHub: ${savedRepositoryCheck.includedFiles} files, ${formatFileSize(
+            savedRepositoryCheck.includedBytes,
+          )}`
+        : "";
       setMessage(
         removedCount
           ? `Saved — removed ${removedCount} unused generated file${
               removedCount === 1 ? "" : "s"
-            }`
-          : "Saved — the homepage will update automatically",
+            }${uploadSummary}`
+          : `Saved — the homepage will update automatically${uploadSummary}`,
       );
     } catch (error) {
       setMessage(
@@ -3558,6 +3652,70 @@ export default function ContentEditor() {
           To prevent the public site from exposing a writable editor, saving is
           enabled only on localhost or 127.0.0.1.
         </div>
+      )}
+
+      {repositoryCheck && (
+        <section
+          className={`${styles.repositoryPanel} ${
+            repositoryCheck.ready
+              ? styles.repositoryReady
+              : styles.repositoryBlocked
+          }`}
+          aria-live="polite"
+        >
+          <div className={styles.repositorySummary}>
+            <strong>
+              GitHub upload check ·{" "}
+              {!repositoryCheck.gitRepository
+                ? "Check unavailable"
+                : !repositoryCheck.ready
+                  ? "Action required"
+                  : repositoryCheck.issues.length > 0
+                    ? "Review warning"
+                    : "Ready"}
+            </strong>
+            {repositoryCheck.gitRepository && (
+              <span>
+                {repositoryCheck.includedFiles} files ·{" "}
+                {formatFileSize(repositoryCheck.includedBytes)}
+              </span>
+            )}
+          </div>
+          <p>
+            {repositoryCheck.gitRepository
+              ? repositoryCheck.ignoredLocalDirectories.length > 0
+                ? `${repositoryCheck.ignoredLocalDirectories.join(
+                    ", ",
+                  )} ${
+                    repositoryCheck.ignoredLocalDirectories.length === 1
+                      ? "is"
+                      : "are"
+                  } local-only and will not be uploaded.`
+                : "Only files visible to Git are included in this estimate."
+              : "Initialize or clone this project as a Git repository to calculate the upload size."}
+          </p>
+          {repositoryCheck.issues.length > 0 && (
+            <ul>
+              {repositoryCheck.issues.map((issue, index) => (
+                <li key={`${issue.path}-${index}`}>
+                  <span
+                    className={
+                      issue.level === "error"
+                        ? styles.repositoryIssueError
+                        : styles.repositoryIssueWarning
+                    }
+                  >
+                    {issue.level}
+                  </span>
+                  <div>
+                    <code>{issue.path}</code>
+                    <p>{issue.message}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
       )}
 
       {validationIssues.length > 0 && (

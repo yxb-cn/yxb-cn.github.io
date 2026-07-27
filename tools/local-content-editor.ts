@@ -15,11 +15,13 @@ import {
   migrateSiteContent,
   validateSiteContent,
 } from "../app/content-schema";
+import { inspectRepositoryForGitHub } from "./repository-check.mjs";
 
 const endpoint = "/__content-editor";
 const healthEndpoint = "/__scholarcanvas-health";
 const photoEndpoint = "/__profile-photo";
 const pageAssetEndpoint = "/__page-asset";
+const repositoryCheckEndpoint = "/__repository-check";
 const projectRoot = path.resolve(process.cwd());
 const contentPath = path.resolve(projectRoot, "content", "site-content.json");
 const maximumBodySize = 8 * 1024 * 1024;
@@ -541,6 +543,45 @@ export function contentEditorPlugin(): Plugin {
               product: "ScholarCanvas",
               projectRoot,
             });
+            return;
+          }
+
+          if (request.method === "OPTIONS") {
+            response.statusCode = 204;
+            response.end();
+            return;
+          }
+
+          next();
+        },
+      );
+
+      server.middlewares.use(
+        repositoryCheckEndpoint,
+        async (request, response, next) => {
+          if (!requestIsLocal(request)) {
+            sendJson(response, 403, {
+              error:
+                "The repository check is available only on this computer.",
+            });
+            return;
+          }
+
+          if (request.method === "GET") {
+            try {
+              sendJson(
+                response,
+                200,
+                await inspectRepositoryForGitHub(projectRoot),
+              );
+            } catch (error) {
+              sendJson(response, 500, {
+                error:
+                  error instanceof Error
+                    ? error.message
+                    : "The repository could not be checked.",
+              });
+            }
             return;
           }
 
