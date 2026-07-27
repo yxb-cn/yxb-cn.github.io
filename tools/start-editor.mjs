@@ -19,8 +19,8 @@ function openBrowser(url) {
   let args;
 
   if (process.platform === "win32") {
-    command = "cmd.exe";
-    args = ["/d", "/s", "/c", `start "" "${url}"`];
+    command = "rundll32.exe";
+    args = ["url.dll,FileProtocolHandler", url];
   } else if (process.platform === "darwin") {
     command = "open";
     args = [url];
