@@ -18,7 +18,6 @@ _在一个本地工作区中编辑论文、栏目、独立页面和文件。_
   <img src="public/screenshots/device-preview.png" width="96%" alt="ScholarCanvas 响应式主页预览">
 </p>
 
-<p align="center"><sub>大屏幕和手机视图均由同一份内容文件生成。</sub></p>
 
 ScholarCanvas 将学术主页仓库转变为一个可视化工作区：编辑内容、实时查看响应式页面，并发布纯静态 GitHub Pages 网站，无需手动修改组件或计算仓库网址。
 
