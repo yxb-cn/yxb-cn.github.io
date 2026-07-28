@@ -18,7 +18,6 @@ _Edit publications, sections, pages, and files from one local workspace._
   <img src="public/screenshots/device-preview.png" width="96%" alt="ScholarCanvas responsive homepage previews">
 </p>
 
-<p align="center"><sub>Responsive large-screen and mobile views generated from the same content file.</sub></p>
 
 ScholarCanvas turns an academic homepage repository into a visual workspace: edit the content, watch the responsive site update, and publish a static GitHub Pages site without hand-editing components or calculating repository URLs.
 
