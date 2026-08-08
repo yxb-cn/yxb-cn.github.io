@@ -53,7 +53,7 @@ function portIsAvailable(port) {
       }
       reject(error);
     });
-    server.listen(port, "127.0.0.1", () => {
+    server.listen({ port, host: "127.0.0.1", exclusive: true }, () => {
       server.close(() => resolve(true));
     });
   });

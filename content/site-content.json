@@ -479,13 +479,13 @@
           "showOnHomepage": true,
           "type": "Journal",
           "year": "2026",
-          "title": "Factor-Augmented Bootstrap Tests of Return and Dividend-Growth Predictability",
+          "title": "Bootstrap Inference for Present-Value Models with Estimated Factors",
           "url": "",
           "authors": [],
           "venue": "",
           "note": "Manuscript in preparation",
           "bibtex": "",
-          "abstract": "Within a present-value-constrained state-space framework, this paper investigates the predictability of stock returns and dividend growth by incorporating classical financial predictors and high-dimensional macroeconomic factors into an extended present-value model. We conduct model estimation and statistical inference through Kalman filtering, maximum likelihood estimation, and bootstrap likelihood ratio tests. Crucially, we establish the asymptotic consistency of the bootstrap likelihood ratio test when employing estimated factors. This study aims to distinguish purely statistical predictive power from economically meaningful predictability that conforms to present-value constraints, thereby providing new empirical evidence to understand the economic sources of stock return predictability.",
+          "abstract": "Existing bootstrap inference for present-value models typically relies on\ndirectly observed predictors, while expected returns and dividend growth may\ndepend on information dispersed across macroeconomic and financial variables.\nWe extend the present-value framework by introducing common factors into its\nstate-space representation to parsimoniously incorporate such high-dimensional\ninformation, and develop bootstrap likelihood-ratio inference with estimated\nfactors. We establish consistency of the two-step estimator and show that\nreplacing unobserved factors with principal-components estimates has no\nfirst-order effect on either the likelihood-ratio statistic or its\ninnovation-bootstrap distribution. An empirical application to annual U.S.\ndata from 1960 to 2023 illustrates the bootstrap procedure.",
           "links": []
         },
         {
