@@ -568,6 +568,17 @@
   ],
   "codeProjects": [
     {
+      "type": "Data",
+      "title": "GKX94 Stock Characteristics: Updated-Sample Construction",
+      "description": "Construct the 94 stock characteristics of Gu, Kelly, and Xiu (2020) for updated CRSP/Compustat samples, with reproducible Python code and benchmark validation.",
+      "technologies": [
+        "Python",
+        "WRDS",
+        "CRSP/Compustat"
+      ],
+      "url": "https://github.com/yxb-cn/gkx94-updated-characteristics"
+    },
+    {
       "type": "Replication",
       "title": "Replication of Bai (2004), Journal of Econometrics",
       "description": "R replication of Bai's (2004) estimation of cross-sectional common stochastic trends in nonstationary panel data, reproducing the simulation results and reimplementing the empirical analysis with U.S. Bureau of Economic Analysis employment and GNP data.",
