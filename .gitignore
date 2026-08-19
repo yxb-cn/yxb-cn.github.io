@@ -45,3 +45,11 @@ next-env.d.ts
 /output/
 /tmp/
 /work/
+
+# local-only homepage launchers
+/Open Homepage Editor.cmd
+/Open Homepage Editor.command
+
+# local editor settings
+/.idea/
+/.vscode/
