@@ -46,6 +46,7 @@ export const sectionRegistry = {
           authors: [{ name: "", self: false, corresponding: false }],
           venue: "",
           note: "",
+          presentations: "",
           bibtex: "",
           abstract: "",
           links: [{ label: "", url: "" }],

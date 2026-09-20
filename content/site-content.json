@@ -69,7 +69,7 @@
       "Machine Learning",
       "Quantitative Investment"
     ],
-    "lastUpdated": "5 August 2026",
+    "lastUpdated": "20 September, 2026",
     "cvPath": "/documents/Xuanbin_Yang_CV.pdf",
     "publicationNote": "Coauthors are shown as (with ...). ✉ denotes a corresponding author.",
     "copyrightYear": "2026",
@@ -176,7 +176,8 @@
       "dataKey": "publicationGroups",
       "fieldLabels": {
         "papers.abstract": "Abstract (supports Markdown and LaTeX: **bold**, *italic*, $...$, $$...$$)",
-        "title": "Title"
+        "title": "Title",
+        "papers.presentations": "Presentations (optional — one conference or seminar per line)"
       }
     },
     {
@@ -329,7 +330,8 @@
           "note": "",
           "bibtex": "@article{cheng2024economic,\n  title = {Economic Policy Uncertainty and Municipal Corporate Bonds Credit Spreads: Evidence from China},\n  author = {Cheng, Tingting and Qiu, Liping and Lv, Wenya and Yang, Xuanbin and Yang, Gang},\n  journal = {Finance Research Letters},\n  volume = {69},\n  pages = {106170},\n  year = {2024},\n  doi = {10.1016/j.frl.2024.106170}\n}",
           "abstract": "This study investigates the influence of economic policy uncertainty on municipal corporate bonds credit spreads in China using data from 2010 to 2022. We find a significant negative nexus between changes in economic policy uncertainty and changes in credit spreads. This finding remains robust after addressing potential endogeneity issues. Mechanism analysis reveals that heightened economic policy uncertainty triggers a \"flights to safety\" phenomenon, leading to higher bond liquidity, which in turn results in lower financing costs and smaller credit spreads. This effect is more pronounced for municipal corporates with higher credit ratings and during periods following default events.",
-          "links": []
+          "links": [],
+          "presentations": ""
         }
       ]
     },
@@ -342,6 +344,7 @@
           "type": "Journal",
           "year": "2025",
           "title": "Predicting the Predictable: Decomposing and Forecasting Stock Returns in a Data-rich Environment",
+          "presentations": "23rd Chinese Finance Annual Meeting (2026, scheduled)\nInternational Workshop on Machine Learning and Applications in Financial Econometrics (2026)\n22nd Chinese Finance Annual Meeting (2025)\nInternational Workshop on Financial Econometrics: Applications and Practice (2024)\nInternational Chinese Statistical Association (ICSA) 2024 China Conference\n10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management (2024)\nNational Academic Forum for Ph.D. Students in Quantitative Economics (2023)",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5368119",
           "authors": [
             {
@@ -398,7 +401,8 @@
           "note": "Reject and Resubmit",
           "bibtex": "",
           "abstract": "In this paper, we propose a novel factor-augmented forecasting regression model (FAR) tailored to binary outcomes, filling a key gap in the existing FAR literature. The model combines high-dimensional factor extraction with maximum likelihood estimation, and we establish its asymptotic theory under general dependence conditions.  Monte Carlo simulation results show that the proposed estimation method performs very well in finite samples. We further demonstrate the usefulness of the proposed model through an application to  U.S. recession forecasting. The proposed model consistently outperforms conventional Probit regression and several machine learning methods across both in-sample and out-of-sample exercises, by effectively utilizing high-dimensional information through latent factors.",
-          "links": []
+          "links": [],
+          "presentations": ""
         },
         {
           "showOnHomepage": true,
@@ -427,7 +431,8 @@
           "note": "Major Revision",
           "bibtex": "",
           "abstract": "We revisit the cross-sectional present-value framework of Kelly and Pruitt (2013) and show that it remains robust once heterogeneous information diffusion is taken into account. We propose a LASSO-PLS approach that uses LASSO to identify real-time information leaders, followed by factor extraction via partial least squares. By filtering out stale signals from slow-moving assets, our method restores out-of-sample market return predictability, improving the monthly $R^2_{oos}$ to 1.1% over 1930--2024, while remaining robust across portfolio granularities, sample splits, and alternative specifications. Our results demonstrate how incorporating economically motivated market structure can enhance the reliability of supervised learning methods in asset pricing.",
-          "links": []
+          "links": [],
+          "presentations": ""
         }
       ]
     },
@@ -440,6 +445,7 @@
           "type": "Journal",
           "year": "2026",
           "title": "Extracting Predictability: A Time-Varying Factor-Augmented Approach under Mixed Persistence",
+          "presentations": "11th Forum on Risk Management and Financial Statistics (2026, **Outstanding Paper Award**)\n9th International Conference on Econometrics and Statistics (EcoSta 2026)\n4th Joint Conference on Statistics and Data Science (2026)\n6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data (2025)\n2025 International Conference on Econometrics and Statistics (ICES 2025, **Best Student Oral Presentation Award**)\n40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7152999",
           "authors": [
             {
@@ -468,25 +474,26 @@
           "bibtex": "",
           "abstract": "This paper develops a time-varying factor-augmented forecasting model designed to extract predictable variation in the target variable when predictors exhibit mixed persistence. The framework accommodates stationary, nonstationary, and a mixture of observable and latent predictors, and allows latent predictors to follow either static or dynamic factor structures, thereby nesting many classical and new models as special cases. We develop an easy-to-implement sieve estimation procedure for the time-varying coefficients, establish its large-sample properties, and construct prediction intervals for the forecasts. Simulation studies show that the proposed methods perform well in finite samples. In an empirical application to U.S. inflation forecasting, the proposed model performs favorably relative to several competitors. Further analyses indicate that latent factors remain informative even when inflation exhibits autoregressive dynamics, since they absorb predictable variation that would otherwise be left in the autoregressive model errors.",
           "links": []
-        }
-      ]
-    },
-    {
-      "id": "working-papers",
-      "title": "Working Papers",
-      "papers": [
+        },
         {
           "showOnHomepage": true,
           "type": "Journal",
           "year": "2026",
           "title": "Bootstrap Inference for Present-Value Models with Estimated Factors",
           "url": "",
-          "authors": [],
-          "venue": "",
-          "note": "Manuscript in preparation",
+          "authors": [
+            {
+              "name": "Tingting Cheng",
+              "self": false,
+              "corresponding": false
+            }
+          ],
+          "venue": "Economics Letters",
+          "note": "Under review",
           "bibtex": "",
           "abstract": "Existing bootstrap inference for present-value models typically relies on\ndirectly observed predictors, while expected returns and dividend growth may\ndepend on information dispersed across macroeconomic and financial variables.\nWe extend the present-value framework by introducing common factors into its\nstate-space representation to parsimoniously incorporate such high-dimensional\ninformation, and develop bootstrap likelihood-ratio inference with estimated\nfactors. We establish consistency of the two-step estimator and show that\nreplacing unobserved factors with principal-components estimates has no\nfirst-order effect on either the likelihood-ratio statistic or its\ninnovation-bootstrap distribution. An empirical application to annual U.S.\ndata from 1960 to 2023 illustrates the bootstrap procedure.",
-          "links": []
+          "links": [],
+          "presentations": ""
         },
         {
           "showOnHomepage": true,
@@ -494,13 +501,36 @@
           "year": "2026",
           "title": "FISTRA: A Financial-Factor-Informed Set Transformer for Learning Tradable Factors from Stock Cross-Sections",
           "url": "",
-          "authors": [],
-          "venue": "",
-          "note": "Manuscript in preparation",
+          "authors": [
+            {
+              "name": "Tingting Cheng",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Fengli Ma",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Yue Zheng",
+              "self": false,
+              "corresponding": false
+            }
+          ],
+          "venue": "AAAI 2027",
+          "note": "Under review",
           "bibtex": "",
           "abstract": "Deep factor models face a persistent trade-off between flexibility and interpretability: expressive latent representations can improve stock return prediction, but their factors often do not correspond to portfolios that can be formed and audited in practice. We propose FISTRA (A **F**inancial-factor-**I**nformed **S**et Transformer for learning **TRA**dable factors), a conditional factor model that reconciles these goals by learning nonlinear cross-sectional structure while defining every latent factor as the return of an explicit stock portfolio. Rather than discarding established financial knowledge, FISTRA retains established financial factors in the return equation and learns complementary tradable factors beyond their span. It encodes each stock's lagged history with temporal convolutions and uses induced set attention to model interactions across the stock cross-section. State-conditioned factor queries and a differentiable allocation layer then produce neutral, unit-gross portfolio weights before current returns are observed. The resulting factors are therefore replicable and auditable, while separate residual networks estimate characteristic-dependent exposures and strictly historical factor-return means generate out-of-sample predictions. Extensive experiments on real United States (U.S.) stock market data show that FISTRA outperforms state-of-the-art factor models in stock return prediction and investment performance. Further analyses demonstrate that its learned portfolios contain incremental information beyond established financial factors, achieving a favorable balance between predictive flexibility and operational interpretability.",
-          "links": []
-        },
+          "links": [],
+          "presentations": ""
+        }
+      ]
+    },
+    {
+      "id": "working-papers",
+      "title": "Working Papers",
+      "papers": [
         {
           "showOnHomepage": false,
           "type": "Journal",
@@ -517,7 +547,8 @@
               "label": "",
               "url": ""
             }
-          ]
+          ],
+          "presentations": ""
         },
         {
           "showOnHomepage": false,
@@ -541,12 +572,22 @@
               "label": "",
               "url": ""
             }
-          ]
+          ],
+          "presentations": ""
         }
       ]
     }
   ],
   "projects": [
+    {
+      "type": "Research Project",
+      "period": "Ends Dec 2030",
+      "title": "Theory and Applications of Nonlinear High-Dimensional Panel Data Models",
+      "funder": "National Natural Science Foundation of China (NSFC), General Program",
+      "grantNumber": "Grant No. 72673089",
+      "principalInvestigator": "PI: Prof. Tingting Cheng",
+      "role": "Project participant"
+    },
     {
       "type": "Research Project",
       "period": "Jan 2022 – Dec 2025",
@@ -592,15 +633,39 @@
   ],
   "talks": [
     {
+      "date": "Oct 2026",
+      "event": "23rd Chinese Finance Annual Meeting",
+      "contribution": "Oral presentation (Scheduled)",
+      "location": "Nankai University · Tianjin, China"
+    },
+    {
+      "date": "Aug 2026",
+      "event": "11th Forum on Risk Management and Financial Statistics",
+      "contribution": "**Outstanding Paper Award**",
+      "location": "Hebei University of Technology · Tianjin, China"
+    },
+    {
+      "date": "Aug 2026",
+      "event": "9th International Conference on Econometrics and Statistics (EcoSta 2026)",
+      "contribution": "",
+      "location": "Ryukoku University · Kyoto, Japan"
+    },
+    {
+      "date": "Jul 2026",
+      "event": "4th Joint Conference on Statistics and Data Science",
+      "contribution": "",
+      "location": "Guiyang, Guizhou, China"
+    },
+    {
       "date": "Jun 2026",
-      "event": "CASE International Workshop on Machine Learning and Applications in Financial Econometrics",
+      "event": "International Workshop on Machine Learning and Applications in Financial Econometrics",
       "contribution": "Oral presentation",
       "location": "Southwestern University of Finance and Economics · Chengdu, China"
     },
     {
       "date": "Dec 2025",
-      "event": "6th Workshop on Big Data Econometrics: Theory and Applications",
-      "contribution": "Oral presentation",
+      "event": "6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data",
+      "contribution": "",
       "location": "Zhongnan University of Economics and Law · Wuhan, China"
     },
     {

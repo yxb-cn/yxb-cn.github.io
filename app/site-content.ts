@@ -26,6 +26,7 @@ type Publication = {
   authors: PublicationAuthor[];
   venue: string;
   note: string;
+  presentations?: string;
   bibtex: string;
   abstract: string;
   links: ContentLink[];

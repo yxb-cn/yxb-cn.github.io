@@ -92,6 +92,24 @@ function TalkContribution({ text }: { text: string }) {
   );
 }
 
+function PublicationPresentations({ value }: { value?: string }) {
+  const entries = (value ?? "")
+    .split(/\r?\n/)
+    .map((entry) => entry.trim())
+    .filter(Boolean);
+
+  if (entries.length === 0) {
+    return null;
+  }
+
+  return (
+    <p className="publication-presentations">
+      <strong>Presentations:</strong>{" "}
+      <InlineLatexText text={entries.join("; ")} />
+    </p>
+  );
+}
+
 function PublicationTools({
   links,
   abstract,
@@ -319,6 +337,7 @@ export function MainContentSection({
                           )}
                         </p>
                       )}
+                      <PublicationPresentations value={paper.presentations} />
                       <PublicationTools
                         links={paper.links}
                         abstract={paper.abstract}
@@ -456,9 +475,11 @@ export function MainContentSection({
                 <h3>
                   <InlineLatexText text={talk.event} />
                 </h3>
-                <p>
-                  <TalkContribution text={talk.contribution} />
-                </p>
+                {talk.contribution?.trim() && (
+                  <p>
+                    <TalkContribution text={talk.contribution} />
+                  </p>
+                )}
               </div>
               <p className="talk-location">
                 <InlineLatexText text={talk.location} />

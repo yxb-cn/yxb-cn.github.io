@@ -107,6 +107,30 @@ export function migrateSiteContent<T extends UnknownRecord>(content: T) {
     },
   };
 
+  const publicationCollections: unknown[] = [next.publicationGroups];
+  if (Array.isArray(next.mainSections)) {
+    for (const section of next.mainSections) {
+      if (isRecord(section) && section.template === "publicationGroups") {
+        publicationCollections.push(
+          typeof section.dataKey === "string"
+            ? next[section.dataKey]
+            : section.content,
+        );
+      }
+    }
+  }
+  for (const groups of publicationCollections) {
+    if (!Array.isArray(groups)) continue;
+    for (const group of groups) {
+      if (!isRecord(group) || !Array.isArray(group.papers)) continue;
+      for (const paper of group.papers) {
+        if (isRecord(paper) && typeof paper.presentations !== "string") {
+          paper.presentations = "";
+        }
+      }
+    }
+  }
+
   next.schemaVersion = currentContentSchemaVersion;
   return next as T & { schemaVersion: number };
 }
