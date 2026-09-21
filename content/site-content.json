@@ -344,7 +344,7 @@
           "type": "Journal",
           "year": "2025",
           "title": "Predicting the Predictable: Decomposing and Forecasting Stock Returns in a Data-rich Environment",
-          "presentations": "23rd Chinese Finance Annual Meeting (2026, scheduled)\nInternational Workshop on Machine Learning and Applications in Financial Econometrics (2026)\n22nd Chinese Finance Annual Meeting (2025)\nInternational Workshop on Financial Econometrics: Applications and Practice (2024)\nInternational Chinese Statistical Association (ICSA) 2024 China Conference\n10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management (2024)\nNational Academic Forum for Ph.D. Students in Quantitative Economics (2023)",
+          "presentations": "23rd Annual Conference on Financial Systems Engineering and Risk Management (2026, scheduled)\n23rd Chinese Finance Annual Meeting (2026, scheduled)\nInternational Workshop on Machine Learning and Applications in Financial Econometrics (2026)\n22nd Chinese Finance Annual Meeting (2025)\nInternational Workshop on Financial Econometrics: Applications and Practice (2024)\nInternational Chinese Statistical Association (ICSA) 2024 China Conference\n10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management (2024)\nNational Academic Forum for Ph.D. Students in Quantitative Economics (2023)",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5368119",
           "authors": [
             {
@@ -632,6 +632,12 @@
     }
   ],
   "talks": [
+    {
+      "date": "Oct 2026",
+      "event": "23rd Annual Conference on Financial Systems Engineering and Risk Management",
+      "contribution": "Oral presentation (Scheduled)",
+      "location": "Southwest Jiaotong University · Chengdu, China"
+    },
     {
       "date": "Oct 2026",
       "event": "23rd Chinese Finance Annual Meeting",
