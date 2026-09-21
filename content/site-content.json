@@ -634,15 +634,15 @@
   "talks": [
     {
       "date": "Oct 2026",
-      "event": "23rd Annual Conference on Financial Systems Engineering and Risk Management",
-      "contribution": "Oral presentation (Scheduled)",
-      "location": "Southwest Jiaotong University · Chengdu, China"
-    },
-    {
-      "date": "Oct 2026",
       "event": "23rd Chinese Finance Annual Meeting",
       "contribution": "Oral presentation (Scheduled)",
       "location": "Nankai University · Tianjin, China"
+    },
+    {
+      "date": "Oct 2026",
+      "event": "23rd Annual Conference on Financial Systems Engineering and Risk Management",
+      "contribution": "Oral presentation (Scheduled)",
+      "location": "Southwest Jiaotong University · Chengdu, China"
     },
     {
       "date": "Aug 2026",
