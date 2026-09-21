@@ -980,7 +980,7 @@ a:hover .arrow {
 .publication-abstract {
   grid-column: 1 / -1;
   grid-row: 2;
-  width: min(100%, 860px);
+  width: 100%;
   margin: 8px 0 2px;
   padding-left: 12px;
   border-left: 2px solid #cad6df;
