@@ -448,7 +448,7 @@
           "type": "Journal",
           "year": "2026",
           "title": "Extracting Predictability: A Time-Varying Factor-Augmented Approach under Mixed Persistence",
-          "presentations": "11th Forum on Risk Management and Financial Statistics (2026, **Outstanding Paper Award**)\n9th International Conference on Econometrics and Statistics (EcoSta 2026)\n4th Joint Conference on Statistics and Data Science (2026)\n6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data (2025)\n2025 International Conference on Econometrics and Statistics (ICES 2025, **Best Student Oral Presentation Award**)\n40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
+          "presentations": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research (2026, scheduled)\n11th Forum on Risk Management and Financial Statistics (2026, **Outstanding Paper Award**)\n9th International Conference on Econometrics and Statistics (EcoSta 2026)\n4th Joint Conference on Statistics and Data Science (2026)\n6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data (2025)\n2025 International Conference on Econometrics and Statistics (ICES 2025, **Best Student Oral Presentation Award**)\n40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7152999",
           "authors": [
             {
@@ -646,6 +646,12 @@
       "event": "23rd Annual Conference on Financial Systems Engineering and Risk Management",
       "contribution": "Oral presentation (Scheduled)",
       "location": "Southwest Jiaotong University · Chengdu, China"
+    },
+    {
+      "date": "Oct 2026",
+      "event": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research",
+      "contribution": "Poster presentation (Scheduled)",
+      "location": "Nankai University · Tianjin, China"
     },
     {
       "date": "Aug 2026",
