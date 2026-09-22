@@ -107,6 +107,25 @@ export function migrateSiteContent<T extends UnknownRecord>(content: T) {
     },
   };
 
+  const educationCollections: unknown[] = [next.education];
+  if (Array.isArray(next.mainSections)) {
+    for (const section of next.mainSections) {
+      if (isRecord(section) && section.template === "education") {
+        educationCollections.push(
+          typeof section.dataKey === "string" ? next[section.dataKey] : section.content,
+        );
+      }
+    }
+  }
+  for (const entries of educationCollections) {
+    if (!Array.isArray(entries)) continue;
+    for (const entry of entries) {
+      if (isRecord(entry) && typeof entry.department !== "string") {
+        entry.department = "";
+      }
+    }
+  }
+
   const publicationCollections: unknown[] = [next.publicationGroups];
   if (Array.isArray(next.mainSections)) {
     for (const section of next.mainSections) {

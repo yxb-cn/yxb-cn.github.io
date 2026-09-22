@@ -51,7 +51,6 @@ export default function RootLayout({
     <html
       lang="en"
       data-density="compact"
-      data-education-style="compact"
       data-secondary-sections-style="compact"
       suppressHydrationWarning
     >

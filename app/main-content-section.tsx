@@ -192,17 +192,29 @@ export function MainContentSection({
               key={`${item.period}-${item.degree}-${index}`}
             >
               <time>{item.period}</time>
-              <div>
-                <h3>
-                  <InlineLatexText text={item.degree} />
-                </h3>
-                <p className="education-institution">
-                  <InlineLatexText text={item.institution} />
-                </p>
+              <div className="education-body">
+                {(item.institution.trim() || item.degree.trim()) && (
+                  <h3>
+                    {item.institution.trim() && <InlineLatexText text={item.institution} />}
+                    {item.institution.trim() && item.degree.trim() && (
+                      <span className="education-separator"> · </span>
+                    )}
+                    {item.degree.trim() && (
+                      <span className="education-degree"><InlineLatexText text={item.degree} /></span>
+                    )}
+                  </h3>
+                )}
+                {item.department?.trim() && (
+                  <p className="education-department"><InlineLatexText text={item.department} /></p>
+                )}
+                {item.details.trim() && (
+                  <p className="education-details">
+                    {item.details.split(/\r?\n/).filter((line) => line.trim()).map((line, lineIndex) => (
+                      <span className="education-detail-line" key={lineIndex}><InlineLatexText text={line} /></span>
+                    ))}
+                  </p>
+                )}
               </div>
-              <p className="education-details">
-                <InlineLatexText text={item.details} />
-              </p>
             </article>
           ))}
         </div>

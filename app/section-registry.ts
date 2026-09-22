@@ -16,6 +16,7 @@ export const sectionRegistry = {
       period: "",
       degree: "",
       institution: "",
+      department: "",
       details: "",
     },
   },

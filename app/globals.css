@@ -738,42 +738,59 @@ a:hover .arrow {
 
 .education-item {
   display: grid;
-  align-items: start;
-  grid-template-columns: 135px minmax(230px, 0.8fr) minmax(0, 1.2fr);
-  gap: 32px;
-  padding-block: 26px;
+  align-items: baseline;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 24px;
+  padding-block: 18px;
+}
+
+.education-item + .education-item {
+  border-top: 1px solid var(--rule);
+}
+
+.education-body {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .education-item time {
-  color: var(--navy);
-  font-size: 11px;
-  font-weight: 650;
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .education-item h3 {
   margin: 0;
   color: var(--navy-deep);
-  font-family: var(--serif);
-  font-size: 22px;
-  font-weight: 600;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.education-degree {
+  font-weight: 500;
+}
+
+.education-separator {
+  color: var(--ink-soft);
+  font-weight: 400;
 }
 
 .education-item p {
-  margin: 0;
+  margin: 6px 0 0;
   color: var(--ink-soft);
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-.education-item .education-institution {
-  margin-top: 4px;
+.education-item .education-department {
   color: var(--ink);
-  font-weight: 600;
 }
 
-.education-details {
-  max-width: 520px;
+.education-detail-line {
+  display: block;
 }
-
 .publication-group {
   margin-left: 0;
 }
@@ -2286,15 +2303,6 @@ html[data-density="compact"] .section-heading h2 {
   letter-spacing: -0.03em;
 }
 
-html[data-density="compact"] .education-item {
-  gap: 22px;
-  padding-block: 10px;
-}
-
-html[data-density="compact"] .education-item h3 {
-  font-size: 19px;
-}
-
 html[data-density="compact"] .publication-group + .publication-group {
   margin-top: 17px;
 }
@@ -2457,91 +2465,6 @@ html[data-density="compact"] .site-footer .section-shell {
 
   html[data-density="compact"] .site-footer .section-shell {
     min-height: 102px;
-  }
-}
-
-/* Reversible compact Education preview. Remove the data-education-style
-   attribute from <html> to restore the previous layout. */
-html[data-education-style="compact"] .education-list {
-  display: grid;
-  grid-template-columns:
-    112px
-    max-content
-    minmax(160px, 0.75fr)
-    minmax(0, 1.25fr);
-}
-
-html[data-education-style="compact"] .education-item {
-  grid-column: 1 / -1;
-  grid-template-columns: subgrid;
-  align-items: baseline;
-  column-gap: 0;
-  padding-block: 5px;
-}
-
-html[data-education-style="compact"] .education-item > div {
-  display: contents;
-}
-
-html[data-education-style="compact"] .education-item h3 {
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0;
-  line-height: 1.5;
-  white-space: nowrap;
-}
-
-html[data-education-style="compact"] .education-item time {
-  font-size: 14px;
-}
-
-html[data-education-style="compact"] .education-item h3::after {
-  content: ",\00a0";
-}
-
-html[data-education-style="compact"] .education-institution {
-  margin-left: 10px;
-  margin-top: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-html[data-education-style="compact"] .education-details {
-  margin-left: 18px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-@media (max-width: 720px) {
-  html[data-education-style="compact"] .education-list {
-    grid-template-columns: 1fr;
-  }
-
-  html[data-education-style="compact"] .education-item {
-    grid-template-columns: 1fr;
-    gap: 1px;
-    padding-block: 7px;
-  }
-
-  html[data-education-style="compact"] .education-item > div {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-  }
-
-  html[data-education-style="compact"] .education-details {
-    margin-left: 0;
-    margin-top: 2px;
-  }
-
-  html[data-education-style="compact"] .education-institution {
-    margin-left: 0;
-  }
-
-  html[data-education-style="compact"] .education-item h3 {
-    white-space: normal;
   }
 }
 

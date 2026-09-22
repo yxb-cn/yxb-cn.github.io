@@ -244,20 +244,23 @@
   "education": [
     {
       "period": "2026 — Present",
-      "degree": "Visiting Ph.D. in Econometrics",
-      "institution": "Department of Econometrics and Business Statistics, Monash Business School, Monash University",
-      "details": "Advisor: Prof. Jiti Gao. Fields: nonparametric econometrics, time-series analysis."
+      "degree": "Visiting Ph.D. Student in Econometrics",
+      "institution": "Monash University",
+      "department": "Department of Econometrics and Business Statistics, Monash Business School",
+      "details": "Advisor: Prof. Jiti Gao.\nFields: nonparametric econometrics, time-series analysis."
     },
     {
       "period": "2022 — Present",
       "degree": "Ph.D. in Finance",
-      "institution": "School of Finance, Nankai University",
-      "details": "Advisor: Prof. Tingting Cheng. Fields: financial econometrics, asset pricing, and machine learning."
+      "institution": "Nankai University",
+      "department": "School of Finance",
+      "details": "Advisor: Prof. Tingting Cheng.\nFields: financial econometrics, asset pricing, and machine learning."
     },
     {
       "period": "2018 — 2022",
       "degree": "Bachelor’s Degree in Finance",
-      "institution": "School of Finance, Southwestern University of Finance and Economics",
+      "institution": "Southwestern University of Finance and Economics",
+      "department": "School of Finance",
       "details": "Finance and Artificial Intelligence program; Graduated with honors."
     }
   ],
