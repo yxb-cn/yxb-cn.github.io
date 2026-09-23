@@ -367,7 +367,7 @@
             }
           ],
           "venue": "Management Science",
-          "note": "Resubmitted (First decision: Reject and Resubmit)",
+          "note": "Resubmitted",
           "bibtex": "",
           "abstract": "We revisit aggregate stock return predictability from a target-design perspective. The difficulty of beating the historical mean may reflect not only weak predictors or inadequate algorithms, but also the fact that aggregate returns pool components with different signal-to-noise ratios. We propose a factor-augmented sum-of-the-parts (FA-SOP) framework that directs high-dimensional macroeconomic information to valuation-multiple growth, the component where present-value logic suggests macroeconomic information should be most visible, while retaining parsimonious forecasts for lower-signal components. Applied to S&P 500 returns from 1960 to 2022, FA-SOP delivers robust out-of-sample statistical and economic gains over the historical mean, univariate regressions, direct factor-augmented return regressions, and traditional SOP benchmarks. The key comparison is that the same underlying macroeconomic panel performs poorly when used to forecast aggregate returns directly, but becomes useful when routed through valuation adjustment. Machine learning extensions show that this pattern is not specific to the linear factor specification, and simulations with known expected returns confirm that FA-SOP better recovers time-varying expected returns without excessive forecast variance. The results support a broader \"predicting the predictable\" principle for data-rich empirical asset pricing.",
           "links": []
@@ -401,7 +401,7 @@
             }
           ],
           "venue": "Journal of Applied Econometrics",
-          "note": "Reject and Resubmit",
+          "note": "Revise and Resubmit",
           "bibtex": "",
           "abstract": "In this paper, we propose a novel factor-augmented forecasting regression model (FAR) tailored to binary outcomes, filling a key gap in the existing FAR literature. The model combines high-dimensional factor extraction with maximum likelihood estimation, and we establish its asymptotic theory under general dependence conditions.  Monte Carlo simulation results show that the proposed estimation method performs very well in finite samples. We further demonstrate the usefulness of the proposed model through an application to  U.S. recession forecasting. The proposed model consistently outperforms conventional Probit regression and several machine learning methods across both in-sample and out-of-sample exercises, by effectively utilizing high-dimensional information through latent factors.",
           "links": [],
@@ -431,7 +431,7 @@
             }
           ],
           "venue": "Journal of Financial Econometrics",
-          "note": "Major Revision",
+          "note": "Revise and Resubmit",
           "bibtex": "",
           "abstract": "We revisit the cross-sectional present-value framework of Kelly and Pruitt (2013) and show that it remains robust once heterogeneous information diffusion is taken into account. We propose a LASSO-PLS approach that uses LASSO to identify real-time information leaders, followed by factor extraction via partial least squares. By filtering out stale signals from slow-moving assets, our method restores out-of-sample market return predictability, improving the monthly $R^2_{oos}$ to 1.1% over 1930--2024, while remaining robust across portfolio granularities, sample splits, and alternative specifications. Our results demonstrate how incorporating economically motivated market structure can enhance the reliability of supervised learning methods in asset pricing.",
           "links": [],
