@@ -2755,13 +2755,17 @@ html[data-secondary-sections-style="compact"] .service-row li {
   }
 
   html[data-secondary-sections-style="compact"] .project-row {
-    grid-template-columns: 1fr;
-    gap: 2px;
-    padding-block: 7px;
+    display: block;
+    padding-block: 14px;
+  }
+
+  html[data-secondary-sections-style="compact"] .project-row + .project-row {
+    border-top: 1px solid var(--rule);
   }
 
   html[data-secondary-sections-style="compact"] .project-body {
     display: block;
+    margin-top: 5px;
   }
 
   html[data-secondary-sections-style="compact"] .project-row h4 {
