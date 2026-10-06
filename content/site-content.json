@@ -69,7 +69,7 @@
       "Machine Learning",
       "Quantitative Investment"
     ],
-    "lastUpdated": "20 September, 2026",
+    "lastUpdated": "6 October, 2026",
     "cvPath": "/documents/Xuanbin_Yang_CV.pdf",
     "publicationNote": "Coauthors are shown as (with ...). ✉ denotes a corresponding author.",
     "copyrightYear": "2026",
@@ -436,6 +436,26 @@
           "abstract": "We revisit the cross-sectional present-value framework of Kelly and Pruitt (2013) and show that it remains robust once heterogeneous information diffusion is taken into account. We propose a LASSO-PLS approach that uses LASSO to identify real-time information leaders, followed by factor extraction via partial least squares. By filtering out stale signals from slow-moving assets, our method restores out-of-sample market return predictability, improving the monthly $R^2_{oos}$ to 1.1% over 1930--2024, while remaining robust across portfolio granularities, sample splits, and alternative specifications. Our results demonstrate how incorporating economically motivated market structure can enhance the reliability of supervised learning methods in asset pricing.",
           "links": [],
           "presentations": ""
+        },
+        {
+          "showOnHomepage": true,
+          "type": "Journal",
+          "year": "2026",
+          "title": "Bootstrap Inference for Present-Value Models with Estimated Factors",
+          "url": "",
+          "authors": [
+            {
+              "name": "Tingting Cheng",
+              "self": false,
+              "corresponding": false
+            }
+          ],
+          "venue": "Economics Letters",
+          "note": "Revise and Resubmit",
+          "bibtex": "",
+          "abstract": "Existing bootstrap inference for present-value models typically relies on\ndirectly observed predictors, while expected returns and dividend growth may\ndepend on information dispersed across macroeconomic and financial variables.\nWe extend the present-value framework by introducing common factors into its\nstate-space representation to parsimoniously incorporate such high-dimensional\ninformation, and develop bootstrap likelihood-ratio inference with estimated\nfactors. We establish consistency of the two-step estimator and show that\nreplacing unobserved factors with principal-components estimates has no\nfirst-order effect on either the likelihood-ratio statistic or its\ninnovation-bootstrap distribution. An empirical application to annual U.S.\ndata from 1960 to 2023 illustrates the bootstrap procedure.",
+          "links": [],
+          "presentations": ""
         }
       ]
     },
@@ -477,26 +497,6 @@
           "bibtex": "",
           "abstract": "This paper develops a time-varying factor-augmented forecasting model designed to extract predictable variation in the target variable when predictors exhibit mixed persistence. The framework accommodates stationary, nonstationary, and a mixture of observable and latent predictors, and allows latent predictors to follow either static or dynamic factor structures, thereby nesting many classical and new models as special cases. We develop an easy-to-implement sieve estimation procedure for the time-varying coefficients, establish its large-sample properties, and construct prediction intervals for the forecasts. Simulation studies show that the proposed methods perform well in finite samples. In an empirical application to U.S. inflation forecasting, the proposed model performs favorably relative to several competitors. Further analyses indicate that latent factors remain informative even when inflation exhibits autoregressive dynamics, since they absorb predictable variation that would otherwise be left in the autoregressive model errors.",
           "links": []
-        },
-        {
-          "showOnHomepage": true,
-          "type": "Journal",
-          "year": "2026",
-          "title": "Bootstrap Inference for Present-Value Models with Estimated Factors",
-          "url": "",
-          "authors": [
-            {
-              "name": "Tingting Cheng",
-              "self": false,
-              "corresponding": false
-            }
-          ],
-          "venue": "Economics Letters",
-          "note": "Under review",
-          "bibtex": "",
-          "abstract": "Existing bootstrap inference for present-value models typically relies on\ndirectly observed predictors, while expected returns and dividend growth may\ndepend on information dispersed across macroeconomic and financial variables.\nWe extend the present-value framework by introducing common factors into its\nstate-space representation to parsimoniously incorporate such high-dimensional\ninformation, and develop bootstrap likelihood-ratio inference with estimated\nfactors. We establish consistency of the two-step estimator and show that\nreplacing unobserved factors with principal-components estimates has no\nfirst-order effect on either the likelihood-ratio statistic or its\ninnovation-bootstrap distribution. An empirical application to annual U.S.\ndata from 1960 to 2023 illustrates the bootstrap procedure.",
-          "links": [],
-          "presentations": ""
         },
         {
           "showOnHomepage": true,
