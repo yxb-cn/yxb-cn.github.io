@@ -69,7 +69,7 @@
       "Machine Learning",
       "Quantitative Investment"
     ],
-    "lastUpdated": "11 October, 2026",
+    "lastUpdated": "12 October, 2026",
     "cvPath": "/documents/Xuanbin_Yang_CV.pdf",
     "publicationNote": "Coauthors are shown as (with ...). ✉ denotes a corresponding author.",
     "copyrightYear": "2026",
@@ -202,7 +202,7 @@
     },
     {
       "id": "talks",
-      "title": "Conference Presentations",
+      "title": "Conference and Seminar Presentations",
       "navigationLabel": "Presentations",
       "showOnHomepage": true,
       "showInNavigation": true,
@@ -347,7 +347,7 @@
           "type": "Journal",
           "year": "2025",
           "title": "Predicting the Predictable: Decomposing and Forecasting Stock Returns in a Data-rich Environment",
-          "presentations": "23rd Annual Conference on Financial Systems Engineering and Risk Management (2026, scheduled)\n23rd Chinese Finance Annual Meeting (2026, scheduled)\nInternational Workshop on Machine Learning and Applications in Financial Econometrics (2026)\n22nd Chinese Finance Annual Meeting (2025)\nInternational Workshop on Financial Econometrics: Applications and Practice (2024)\nInternational Chinese Statistical Association (ICSA) 2024 China Conference\n10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management (2024)\nNational Academic Forum for Ph.D. Students in Quantitative Economics (2023)",
+          "presentations": "23rd Annual Conference on Financial Systems Engineering and Risk Management (2026)\n23rd Chinese Finance Annual Meeting (2026)\n29th Camphor Economist Circle Seminar (Chengdu, 2026)\nInternational Workshop on Machine Learning and Applications in Financial Econometrics (2026)\n22nd Chinese Finance Annual Meeting (2025)\nInternational Workshop on Financial Econometrics: Applications and Practice (2024)\nInternational Chinese Statistical Association (ICSA) 2024 China Conference\n10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management (2024)\nNational Academic Forum for Ph.D. Students in Quantitative Economics (2023)",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5368119",
           "authors": [
             {
@@ -468,7 +468,7 @@
           "type": "Journal",
           "year": "2026",
           "title": "Extracting Predictability: A Time-Varying Factor-Augmented Approach under Mixed Persistence",
-          "presentations": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research (2026, scheduled)\n11th Forum on Risk Management and Financial Statistics (2026, **Outstanding Paper Award**)\n9th International Conference on Econometrics and Statistics (EcoSta 2026)\n4th Joint Conference on Statistics and Data Science (2026)\n6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data (2025)\n2025 International Conference on Econometrics and Statistics (ICES 2025, **Best Student Oral Presentation Award**)\n40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
+          "presentations": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research (2026)\n11th Forum on Risk Management and Financial Statistics (2026, **Outstanding Paper Award**)\n9th International Conference on Econometrics and Statistics (EcoSta 2026)\n4th Joint Conference on Statistics and Data Science (2026)\n6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data (2025)\n2025 International Conference on Econometrics and Statistics (ICES 2025, **Best Student Oral Presentation Award**)\n40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7152999",
           "authors": [
             {
@@ -638,19 +638,25 @@
     {
       "date": "Oct 2026",
       "event": "23rd Chinese Finance Annual Meeting",
-      "contribution": "Oral presentation (Scheduled)",
+      "contribution": "Oral presentation",
       "location": "Nankai University · Tianjin, China"
     },
     {
       "date": "Oct 2026",
+      "event": "29th Camphor Economist Circle Seminar (Chengdu)",
+      "contribution": "Oral presentation",
+      "location": "University of Electronic Science and Technology of China · Chengdu, China"
+    },
+    {
+      "date": "Oct 2026",
       "event": "23rd Annual Conference on Financial Systems Engineering and Risk Management",
-      "contribution": "Oral presentation (Scheduled)",
+      "contribution": "Oral presentation",
       "location": "Southwest Jiaotong University · Chengdu, China"
     },
     {
       "date": "Oct 2026",
       "event": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research",
-      "contribution": "Poster presentation (Scheduled)",
+      "contribution": "Poster presentation",
       "location": "Nankai University · Tianjin, China"
     },
     {
