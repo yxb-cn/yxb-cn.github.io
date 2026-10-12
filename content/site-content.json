@@ -347,7 +347,7 @@
           "type": "Journal",
           "year": "2025",
           "title": "Predicting the Predictable: Decomposing and Forecasting Stock Returns in a Data-rich Environment",
-          "presentations": "23rd Annual Conference on Financial Systems Engineering and Risk Management (2026)\n23rd Chinese Finance Annual Meeting (2026)\n29th Camphor Economist Circle Seminar (Chengdu, 2026)\nInternational Workshop on Machine Learning and Applications in Financial Econometrics (2026)\n22nd Chinese Finance Annual Meeting (2025)\nInternational Workshop on Financial Econometrics: Applications and Practice (2024)\nInternational Chinese Statistical Association (ICSA) 2024 China Conference\n10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management (2024)\nNational Academic Forum for Ph.D. Students in Quantitative Economics (2023)",
+          "presentations": "23rd Annual Conference on Financial Systems Engineering and Risk Management (2026)\n23rd Chinese Finance Annual Meeting (2026)\n29th Camphor Economist Circle Seminar (Chengdu, 2026)\nInternational Workshop on Machine Learning and Applications in Financial Econometrics (2026)\n22nd Chinese Finance Annual Meeting (2025)\nInternational Workshop on Financial Econometrics: Applications and Practice (2024)\nInternational Chinese Statistical Association (ICSA) 2024 China Conference\n10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management (2024, **Outstanding Presentation Award**)\nNational Academic Forum for Ph.D. Students in Quantitative Economics (2023)",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5368119",
           "authors": [
             {
@@ -638,25 +638,25 @@
     {
       "date": "Oct 2026",
       "event": "23rd Chinese Finance Annual Meeting",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "Nankai University · Tianjin, China"
     },
     {
       "date": "Oct 2026",
       "event": "29th Camphor Economist Circle Seminar (Chengdu)",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "University of Electronic Science and Technology of China · Chengdu, China"
     },
     {
       "date": "Oct 2026",
       "event": "23rd Annual Conference on Financial Systems Engineering and Risk Management",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "Southwest Jiaotong University · Chengdu, China"
     },
     {
       "date": "Oct 2026",
       "event": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research",
-      "contribution": "Poster presentation",
+      "contribution": "",
       "location": "Nankai University · Tianjin, China"
     },
     {
@@ -680,7 +680,7 @@
     {
       "date": "Jun 2026",
       "event": "International Workshop on Machine Learning and Applications in Financial Econometrics",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "Southwestern University of Finance and Economics · Chengdu, China"
     },
     {
@@ -692,43 +692,43 @@
     {
       "date": "Oct 2025",
       "event": "22nd Chinese Finance Annual Meeting",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "Nanjing University · Nanjing, China"
     },
     {
       "date": "Jul 2025",
       "event": "2025 International Conference on Econometrics and Statistics (ICES 2025)",
-      "contribution": "Oral presentation · Best Student Oral Presentation Award",
+      "contribution": "**Best Student Oral Presentation Award**",
       "location": "Harbin Institute of Technology · Harbin, China"
     },
     {
       "date": "Dec 2024",
       "event": "40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "Shanghai University of Finance and Economics · Shanghai, China"
     },
     {
       "date": "Jul 2024",
       "event": "International Workshop on Financial Econometrics: Applications and Practice",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "Nankai University · Tianjin, China"
     },
     {
       "date": "Jun 2024",
       "event": "International Chinese Statistical Association (ICSA) 2024 China Conference",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "Zhongnan University of Economics and Law · Wuhan, China"
     },
     {
       "date": "May 2024",
       "event": "10th Jingshi Scholars Forum and 6th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management",
-      "contribution": "Oral presentation",
+      "contribution": "**Outstanding Presentation Award**",
       "location": "Renmin University of China · Beijing, China"
     },
     {
       "date": "Dec 2023",
       "event": "National Academic Forum for Ph.D. Students in Quantitative Economics",
-      "contribution": "Oral presentation",
+      "contribution": "",
       "location": "Xiamen University · Xiamen, China"
     }
   ],
