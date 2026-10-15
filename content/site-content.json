@@ -69,7 +69,7 @@
       "Machine Learning",
       "Quantitative Investment"
     ],
-    "lastUpdated": "12 October, 2026",
+    "lastUpdated": "15 October, 2026",
     "cvPath": "/documents/Xuanbin_Yang_CV.pdf",
     "publicationNote": "Coauthors are shown as (with ...). ✉ denotes a corresponding author.",
     "copyrightYear": "2026",
@@ -370,7 +370,12 @@
           "note": "Resubmitted",
           "bibtex": "",
           "abstract": "We revisit aggregate stock return predictability from a target-design perspective. The difficulty of beating the historical mean may reflect not only weak predictors or inadequate algorithms, but also the fact that aggregate returns pool components with different signal-to-noise ratios. We propose a factor-augmented sum-of-the-parts (FA-SOP) framework that directs high-dimensional macroeconomic information to valuation-multiple growth, the component where present-value logic suggests macroeconomic information should be most visible, while retaining parsimonious forecasts for lower-signal components. Applied to S&P 500 returns from 1960 to 2022, FA-SOP delivers robust out-of-sample statistical and economic gains over the historical mean, univariate regressions, direct factor-augmented return regressions, and traditional SOP benchmarks. The key comparison is that the same underlying macroeconomic panel performs poorly when used to forecast aggregate returns directly, but becomes useful when routed through valuation adjustment. Machine learning extensions show that this pattern is not specific to the linear factor specification, and simulations with known expected returns confirm that FA-SOP better recovers time-varying expected returns without excessive forecast variance. The results support a broader \"predicting the predictable\" principle for data-rich empirical asset pricing.",
-          "links": []
+          "links": [
+            {
+              "label": "PDF",
+              "url": "/documents/FASOP.pdf"
+            }
+          ]
         },
         {
           "showOnHomepage": true,
@@ -404,7 +409,12 @@
           "note": "Revise and Resubmit",
           "bibtex": "",
           "abstract": "In this paper, we propose a novel factor-augmented forecasting regression model (FAR) tailored to binary outcomes, filling a key gap in the existing FAR literature. The model combines high-dimensional factor extraction with maximum likelihood estimation, and we establish its asymptotic theory under general dependence conditions.  Monte Carlo simulation results show that the proposed estimation method performs very well in finite samples. We further demonstrate the usefulness of the proposed model through an application to  U.S. recession forecasting. The proposed model consistently outperforms conventional Probit regression and several machine learning methods across both in-sample and out-of-sample exercises, by effectively utilizing high-dimensional information through latent factors.",
-          "links": [],
+          "links": [
+            {
+              "label": "PDF",
+              "url": "/documents/Binary_FAR.pdf"
+            }
+          ],
           "presentations": ""
         },
         {
@@ -431,10 +441,15 @@
             }
           ],
           "venue": "Journal of Financial Econometrics",
-          "note": "Revise and Resubmit",
+          "note": "Resubmitted",
           "bibtex": "",
-          "abstract": "We revisit the cross-sectional present-value framework of Kelly and Pruitt (2013) and show that it remains robust once heterogeneous information diffusion is taken into account. We propose a LASSO-PLS approach that uses LASSO to identify real-time information leaders, followed by factor extraction via partial least squares. By filtering out stale signals from slow-moving assets, our method restores out-of-sample market return predictability, improving the monthly $R^2_{oos}$ to 1.1% over 1930--2024, while remaining robust across portfolio granularities, sample splits, and alternative specifications. Our results demonstrate how incorporating economically motivated market structure can enhance the reliability of supervised learning methods in asset pricing.",
-          "links": [],
+          "abstract": "We revisit the cross-sectional present-value framework of Kelly and Pruitt (2013) with heterogeneous, time-varying information precision. Incomplete news incorporation can generate common valuation errors that violate weak-dependence assumptions for factor extraction. Guided by the model, we combine return-based Leader identification with supervised factor extraction from their valuations, which we call  _leading present values_. Over 1980--2025, Negative-Leader forecasts of monthly U.S. stock market returns achieve an out-of-sample $R^2$ of 1.54% relative to the historical mean, outperforming full-panel valuation forecasts and forecasts using the value-weighted return of the same Leaders as the predictor. These findings demonstrate how integrating economic structure with supervised representation learning can improve forecast accuracy and economic value, providing a broader framework for economically informed machine learning in asset pricing.",
+          "links": [
+            {
+              "label": "PDF",
+              "url": "/documents/Market_Expectations_in_the_Cross_Section_of_Leading_Present_Values.pdf"
+            }
+          ],
           "presentations": ""
         },
         {
@@ -454,7 +469,12 @@
           "note": "Revise and Resubmit",
           "bibtex": "",
           "abstract": "Existing bootstrap inference for present-value models typically relies on\ndirectly observed predictors, while expected returns and dividend growth may\ndepend on information dispersed across macroeconomic and financial variables.\nWe extend the present-value framework by introducing common factors into its\nstate-space representation to parsimoniously incorporate such high-dimensional\ninformation, and develop bootstrap likelihood-ratio inference with estimated\nfactors. We establish consistency of the two-step estimator and show that\nreplacing unobserved factors with principal-components estimates has no\nfirst-order effect on either the likelihood-ratio statistic or its\ninnovation-bootstrap distribution. An empirical application to annual U.S.\ndata from 1960 to 2023 illustrates the bootstrap procedure.",
-          "links": [],
+          "links": [
+            {
+              "label": "PDF",
+              "url": "/documents/Bootstrap_Inference_for_Present-Value_Models_with_Estimated_Factors.pdf"
+            }
+          ],
           "presentations": ""
         }
       ]
@@ -496,7 +516,12 @@
           "note": "Under review",
           "bibtex": "",
           "abstract": "This paper develops a time-varying factor-augmented forecasting model designed to extract predictable variation in the target variable when predictors exhibit mixed persistence. The framework accommodates stationary, nonstationary, and a mixture of observable and latent predictors, and allows latent predictors to follow either static or dynamic factor structures, thereby nesting many classical and new models as special cases. We develop an easy-to-implement sieve estimation procedure for the time-varying coefficients, establish its large-sample properties, and construct prediction intervals for the forecasts. Simulation studies show that the proposed methods perform well in finite samples. In an empirical application to U.S. inflation forecasting, the proposed model performs favorably relative to several competitors. Further analyses indicate that latent factors remain informative even when inflation exhibits autoregressive dynamics, since they absorb predictable variation that would otherwise be left in the autoregressive model errors.",
-          "links": []
+          "links": [
+            {
+              "label": "PDF",
+              "url": "/documents/Extracting_Predictability_A_Time-Varying_Factor-Augmented_Approach_under_Mixed_Persistence.pdf"
+            }
+          ]
         },
         {
           "showOnHomepage": true,

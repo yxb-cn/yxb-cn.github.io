@@ -141,13 +141,12 @@ function PublicationTools({
       )}
       <div className="publication-actions">
         {visibleLinks.map((link, index) => {
-          const external = /^https?:\/\//i.test(link.url);
           return (
             <a
               href={publicPath(link.url)}
               key={`${link.label}-${index}`}
-              target={external ? "_blank" : undefined}
-              rel={external ? "noreferrer" : undefined}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {link.label} <Arrow diagonal />
             </a>
