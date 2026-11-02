@@ -69,7 +69,7 @@
       "Machine Learning",
       "Quantitative Investment"
     ],
-    "lastUpdated": "15 October, 2026",
+    "lastUpdated": "2 November, 2026",
     "cvPath": "/documents/Xuanbin_Yang_CV.pdf",
     "publicationNote": "Coauthors are shown as (with ...). ✉ denotes a corresponding author.",
     "copyrightYear": "2026",
@@ -381,6 +381,46 @@
           "showOnHomepage": true,
           "type": "Journal",
           "year": "2026",
+          "title": "Extracting Predictability: A Time-Varying Factor-Augmented Approach under Mixed Persistence",
+          "presentations": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research (2026)\n11th Forum on Risk Management and Financial Statistics (2026, **Outstanding Paper Award**)\n9th International Conference on Econometrics and Statistics (EcoSta 2026)\n4th Joint Conference on Statistics and Data Science (2026)\n6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data (2025)\n2025 International Conference on Econometrics and Statistics (ICES 2025, **Best Student Oral Presentation Award**)\n40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7152999",
+          "authors": [
+            {
+              "name": "Tingting Cheng",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Jiti Gao",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Yayi Yan",
+              "self": false,
+              "corresponding": false
+            },
+            {
+              "name": "Xuanbin Yang",
+              "self": true,
+              "corresponding": false
+            }
+          ],
+          "venue": "Journal of Econometrics",
+          "note": "Revise and Resubmit",
+          "bibtex": "",
+          "abstract": "This paper develops a time-varying factor-augmented forecasting model designed to extract predictable variation in the target variable when predictors exhibit mixed persistence. The framework accommodates stationary, nonstationary, and a mixture of observable and latent predictors, and allows latent predictors to follow either static or dynamic factor structures, thereby nesting many classical and new models as special cases. We develop an easy-to-implement sieve estimation procedure for the time-varying coefficients, establish its large-sample properties, and construct prediction intervals for the forecasts. Simulation studies show that the proposed methods perform well in finite samples. In an empirical application to U.S. inflation forecasting, the proposed model performs favorably relative to several competitors. Further analyses indicate that latent factors remain informative even when inflation exhibits autoregressive dynamics, since they absorb predictable variation that would otherwise be left in the autoregressive model errors.",
+          "links": [
+            {
+              "label": "PDF",
+              "url": "/documents/Extracting_Predictability_A_Time-Varying_Factor-Augmented_Approach_under_Mixed_Persistence.pdf"
+            }
+          ]
+        },
+        {
+          "showOnHomepage": true,
+          "type": "Journal",
+          "year": "2026",
           "title": "Binary Response Forecasting under a Factor-Augmented Framework",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5359505",
           "authors": [
@@ -483,46 +523,6 @@
       "id": "under-review",
       "title": "Under Review",
       "papers": [
-        {
-          "showOnHomepage": true,
-          "type": "Journal",
-          "year": "2026",
-          "title": "Extracting Predictability: A Time-Varying Factor-Augmented Approach under Mixed Persistence",
-          "presentations": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research (2026)\n11th Forum on Risk Management and Financial Statistics (2026, **Outstanding Paper Award**)\n9th International Conference on Econometrics and Statistics (EcoSta 2026)\n4th Joint Conference on Statistics and Data Science (2026)\n6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data (2025)\n2025 International Conference on Econometrics and Statistics (ICES 2025, **Best Student Oral Presentation Award**)\n40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
-          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7152999",
-          "authors": [
-            {
-              "name": "Tingting Cheng",
-              "self": false,
-              "corresponding": false
-            },
-            {
-              "name": "Jiti Gao",
-              "self": false,
-              "corresponding": false
-            },
-            {
-              "name": "Yayi Yan",
-              "self": false,
-              "corresponding": false
-            },
-            {
-              "name": "Xuanbin Yang",
-              "self": true,
-              "corresponding": false
-            }
-          ],
-          "venue": "Journal of Econometrics",
-          "note": "Under review",
-          "bibtex": "",
-          "abstract": "This paper develops a time-varying factor-augmented forecasting model designed to extract predictable variation in the target variable when predictors exhibit mixed persistence. The framework accommodates stationary, nonstationary, and a mixture of observable and latent predictors, and allows latent predictors to follow either static or dynamic factor structures, thereby nesting many classical and new models as special cases. We develop an easy-to-implement sieve estimation procedure for the time-varying coefficients, establish its large-sample properties, and construct prediction intervals for the forecasts. Simulation studies show that the proposed methods perform well in finite samples. In an empirical application to U.S. inflation forecasting, the proposed model performs favorably relative to several competitors. Further analyses indicate that latent factors remain informative even when inflation exhibits autoregressive dynamics, since they absorb predictable variation that would otherwise be left in the autoregressive model errors.",
-          "links": [
-            {
-              "label": "PDF",
-              "url": "/documents/Extracting_Predictability_A_Time-Varying_Factor-Augmented_Approach_under_Mixed_Persistence.pdf"
-            }
-          ]
-        },
         {
           "showOnHomepage": true,
           "type": "Conference",
