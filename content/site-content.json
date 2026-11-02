@@ -177,7 +177,8 @@
       "fieldLabels": {
         "papers.abstract": "Abstract (supports Markdown and LaTeX: **bold**, *italic*, $...$, $$...$$)",
         "title": "Title",
-        "papers.presentations": "Presentations (optional — one conference or seminar per line)"
+        "papers.presentations": "Presentations (optional — one conference or seminar per line)",
+        "papers.authors.name": "English Name"
       }
     },
     {
@@ -306,7 +307,7 @@
             {
               "name": "Tingting Cheng",
               "self": false,
-              "corresponding": true
+              "corresponding": false
             },
             {
               "name": "Liping Qiu",
@@ -358,7 +359,7 @@
             {
               "name": "Xuanbin Yang",
               "self": true,
-              "corresponding": true
+              "corresponding": false
             },
             {
               "name": "Albert Bo Zhao",
@@ -437,7 +438,7 @@
             {
               "name": "Fei Liu",
               "self": false,
-              "corresponding": true
+              "corresponding": false
             },
             {
               "name": "Xuanbin Yang",
@@ -477,7 +478,7 @@
             {
               "name": "Xuanbin Yang",
               "self": true,
-              "corresponding": true
+              "corresponding": false
             }
           ],
           "venue": "Journal of Financial Econometrics",
@@ -552,6 +553,36 @@
           "abstract": "Deep factor models face a persistent trade-off between flexibility and interpretability: expressive latent representations can improve stock return prediction, but their factors often do not correspond to portfolios that can be formed and audited in practice. We propose FISTRA (A **F**inancial-factor-**I**nformed **S**et Transformer for learning **TRA**dable factors), a conditional factor model that reconciles these goals by learning nonlinear cross-sectional structure while defining every latent factor as the return of an explicit stock portfolio. Rather than discarding established financial knowledge, FISTRA retains established financial factors in the return equation and learns complementary tradable factors beyond their span. It encodes each stock's lagged history with temporal convolutions and uses induced set attention to model interactions across the stock cross-section. State-conditioned factor queries and a differentiable allocation layer then produce neutral, unit-gross portfolio weights before current returns are observed. The resulting factors are therefore replicable and auditable, while separate residual networks estimate characteristic-dependent exposures and strictly historical factor-return means generate out-of-sample predictions. Extensive experiments on real United States (U.S.) stock market data show that FISTRA outperforms state-of-the-art factor models in stock return prediction and investment performance. Further analyses demonstrate that its learned portfolios contain incremental information beyond established financial factors, achieving a favorable balance between predictive flexibility and operational interpretability.",
           "links": [],
           "presentations": ""
+        },
+        {
+          "showOnHomepage": true,
+          "type": "Journal",
+          "year": "2026",
+          "title": "异质信息、价格领先与市场预期收益——基于横截面现值框架的分析",
+          "url": "",
+          "authors": [
+            {
+              "name": "杨轩滨",
+              "self": true,
+              "corresponding": false
+            },
+            {
+              "name": "程婷婷",
+              "self": false,
+              "corresponding": false
+            }
+          ],
+          "venue": "管理科学学报",
+          "note": "Under review",
+          "presentations": "",
+          "bibtex": "",
+          "abstract": "估值横截面是否蕴含市场预期收益信息，是资产定价中的重要问题。本文提出具有异质信号精度的横截面现值框架：当估值与预期收益受共同因素驱动时，信息吸收不足会形成难以通过扩大横截面消除的共同测量误差，价格领先则为识别高精度资产提供依据。据此，本文提出结合领先者筛选的因子增广回归。实证表明：1）中国股票估值横截面蕴含市场预期收益信息，领先者筛选改善了横截面信息的利用；2）领先者对共同信息的反应强于滞后者，支持通过收益偏离识别信息优势；3）上涨趋势较强、金融压力和政策不确定性较低时，市场信息更分散，反之更集中。本文将经济机制驱动的信息筛选与因子预测相结合，从信息吸收差异的角度加深了对市场预期收益的理解。",
+          "links": [
+            {
+              "label": "",
+              "url": ""
+            }
+          ]
         }
       ]
     },
