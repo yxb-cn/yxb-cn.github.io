@@ -2039,6 +2039,7 @@ a:hover .arrow {
     max-width: 100%;
     overflow-wrap: break-word;
     font-size: 14px;
+    text-wrap: pretty;
   }
 
   .hero-bio a,
@@ -2129,6 +2130,11 @@ a:hover .arrow {
   .publication-meta {
     flex-direction: row;
     align-items: center;
+  }
+
+  .publication + .publication {
+    margin-top: 0;
+    border-top: 1px solid var(--rule);
   }
 
   .venue {
@@ -2478,6 +2484,11 @@ html[data-density="compact"] .site-footer .section-shell {
 
   html[data-density="compact"] .publication-group + .publication-group {
     margin-top: 15px;
+  }
+
+  html[data-density="compact"] .publication {
+    row-gap: 5px;
+    padding-block: 12px;
   }
 
   html[data-density="compact"] .research-area {

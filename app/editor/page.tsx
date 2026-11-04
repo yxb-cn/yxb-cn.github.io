@@ -29,6 +29,7 @@ import {
   getSectionDefinition,
   sectionRegistry,
 } from "../section-registry";
+import { useIPhonePreview } from "./use-iphone-preview";
 import styles from "./editor.module.css";
 
 type JsonPrimitive = string | number | boolean | null;
@@ -2859,6 +2860,7 @@ export default function ContentEditor() {
   const [previewDevice, setPreviewDevice] = useState<"desktop" | "mobile">(
     "desktop",
   );
+  useIPhonePreview(previewFrameRef, previewOpen && previewDevice === "mobile");
 
   function applyDraftChange(
     updater: (current: JsonObject) => JsonObject,
@@ -4156,7 +4158,11 @@ export default function ContentEditor() {
             <header className={styles.previewToolbar}>
               <div>
                 <strong>Live Preview</strong>
-                <span>Updates as you edit; saving is not required.</span>
+                <span>
+                  {previewDevice === "mobile"
+                    ? "393 × 852 viewport · 1179 × 2556 native pixels · 3×"
+                    : "Updates as you edit; saving is not required."}
+                </span>
               </div>
               <div className={styles.previewDeviceControls}>
                 <button
@@ -4197,7 +4203,7 @@ export default function ContentEditor() {
             >
               <iframe
                 ref={previewFrameRef}
-                title={`${previewDevice} homepage preview`}
+                title={previewDevice === "mobile" ? "iPhone 14 Pro homepage preview" : "Desktop homepage preview"}
                 src={publicPath("/?editorPreview=1")}
                 onLoad={() =>
                   previewFrameRef.current?.contentWindow?.postMessage(

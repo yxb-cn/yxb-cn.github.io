@@ -1773,8 +1773,15 @@
 }
 
 .previewViewportMobile {
-  width: min(430px, calc(96vw - 42px));
-  height: min(820px, calc(94vh - 76px));
+  display: grid;
+  width: 100%;
+  height: 852px;
+  min-height: 0;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+  place-items: center;
+  background: transparent;
+  box-shadow: none;
+  transition: none;
 }
 
 .previewViewport iframe {
@@ -1783,6 +1790,13 @@
   height: 100%;
   border: 0;
   background: #fff;
+}
+
+.previewViewportMobile iframe {
+  width: 393px;
+  height: 852px;
+  zoom: var(--phone-zoom, 1);
+  transform: scale(var(--phone-scale, 1));
 }
 
 @media (max-width: 900px) {
@@ -1945,8 +1959,7 @@
     flex: 1 1 auto;
   }
 
-  .previewViewportDesktop,
-  .previewViewportMobile {
+  .previewViewportDesktop {
     width: calc(100vw - 32px);
     height: calc(100vh - 132px);
   }
