@@ -204,7 +204,7 @@
     {
       "id": "talks",
       "title": "Conference and Seminar Presentations",
-      "navigationLabel": "Presentations",
+      "navigationLabel": "Conferences",
       "showOnHomepage": true,
       "showInNavigation": true,
       "navigationPlacement": "top",
@@ -220,26 +220,6 @@
       "navigationPlacement": "hidden",
       "template": "serviceAndSkills",
       "dataKey": "serviceAndSkills"
-    },
-    {
-      "id": "blog",
-      "title": "Blog",
-      "navigationLabel": "Blog",
-      "showOnHomepage": true,
-      "showInNavigation": true,
-      "navigationPlacement": "top",
-      "template": "pageCollection",
-      "fieldLabels": {},
-      "content": [
-        {
-          "showOnHomepage": true,
-          "meta": "July 2026",
-          "title": "Welcome to the Demo Blog",
-          "slug": "welcome-to-the-demo",
-          "summary": "A short example showing Markdown, links, and LaTeX on an independent page.",
-          "markdownPath": "public/page-content/blog/welcome-to-the-demo/index.md"
-        }
-      ]
     }
   ],
   "education": [
