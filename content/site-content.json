@@ -69,7 +69,7 @@
       "Machine Learning",
       "Quantitative Investment"
     ],
-    "lastUpdated": "4 November, 2026",
+    "lastUpdated": "28 November, 2026",
     "cvPath": "/documents/Xuanbin_Yang_CV.pdf",
     "publicationNote": "Coauthors are shown as (with ...). ✉ denotes a corresponding author.",
     "copyrightYear": "2026",
@@ -279,7 +279,7 @@
       "papers": [
         {
           "showOnHomepage": true,
-          "type": "Journal",
+          "type": "FRL",
           "year": "2024",
           "title": "Economic policy uncertainty and municipal corporate bonds credit spreads: Evidence from China",
           "url": "https://doi.org/10.1016/j.frl.2024.106170",
@@ -325,7 +325,7 @@
       "papers": [
         {
           "showOnHomepage": true,
-          "type": "Journal",
+          "type": "JMP",
           "year": "",
           "title": "Predicting the Predictable: Decomposing and Forecasting Stock Returns in a Data-rich Environment",
           "presentations": "23rd Chinese Finance Annual Meeting (2026)\n29th Camphor Economist Circle Seminar (Chengdu, 2026)\n23rd Annual Conference on Financial Systems Engineering and Risk Management (2026)\nInternational Workshop on Machine Learning and Applications in Financial Econometrics (2026)\n22nd Chinese Finance Annual Meeting (2025)\nInternational Workshop on Financial Econometrics: Applications and Practice (2024)\nInternational Chinese Statistical Association (ICSA) 2024 China Conference\n10th Jingshi Scholars Forum and 5th Tsinghua-Peking-Renmin Graduate Forum in Economics and Management (2024, **Outstanding Presentation Award**)\nNational Academic Forum for Ph.D. Students in Quantitative Economics (2023)",
@@ -360,7 +360,7 @@
         },
         {
           "showOnHomepage": true,
-          "type": "Journal",
+          "type": "JoE",
           "year": "2026",
           "title": "Extracting Predictability: A Time-Varying Factor-Augmented Approach under Mixed Persistence",
           "presentations": "1st Nankai University National Doctoral Forum on Frontier Interdisciplinary Research (2026)\n11th Forum on Risk Management and Financial Statistics (2026, **Outstanding Paper Award**)\n9th International Conference on Econometrics and Statistics (EcoSta 2026)\n4th Joint Conference on Statistics and Data Science (2026)\n6th Workshop on Big Data Econometrics: Theory and Applications — Econometric Modeling and Statistical Learning for Time Series Data (2025)\n2025 International Conference on Econometrics and Statistics (ICES 2025, **Best Student Oral Presentation Award**)\n40th Anniversary Conference and 2024 Annual Meeting of the National Association of Industrial Statistics Teaching and Research",
@@ -400,7 +400,7 @@
         },
         {
           "showOnHomepage": true,
-          "type": "Journal",
+          "type": "JAE(C)",
           "year": "2026",
           "title": "Binary Response Forecasting under a Factor-Augmented Framework",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5359505",
@@ -440,7 +440,7 @@
         },
         {
           "showOnHomepage": true,
-          "type": "Journal",
+          "type": "JFEC",
           "year": "2026",
           "title": "Market Expectations in the Cross-Section of Leading Present Values",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6964418",
@@ -475,7 +475,7 @@
         },
         {
           "showOnHomepage": true,
-          "type": "Journal",
+          "type": "EL",
           "year": "2026",
           "title": "Bootstrap Inference for Present-Value Models with Estimated Factors",
           "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7273870",
@@ -506,7 +506,7 @@
       "papers": [
         {
           "showOnHomepage": true,
-          "type": "Conference",
+          "type": "AAAI",
           "year": "2026",
           "title": "FISTRA: A Financial-Factor-Informed Set Transformer for Learning Tradable Factors from Stock Cross-Sections",
           "url": "",
@@ -570,6 +570,31 @@
       "id": "working-papers",
       "title": "Working Papers",
       "papers": [
+        {
+          "showOnHomepage": false,
+          "type": "Journal",
+          "year": "2026",
+          "title": "A GMM-based test of slope stability in high-dimensional panel data models",
+          "url": "",
+          "authors": [
+            {
+              "name": "",
+              "self": false,
+              "corresponding": false
+            }
+          ],
+          "venue": "",
+          "note": "Manuscript in preparation",
+          "presentations": "",
+          "bibtex": "",
+          "abstract": "",
+          "links": [
+            {
+              "label": "",
+              "url": ""
+            }
+          ]
+        },
         {
           "showOnHomepage": false,
           "type": "Journal",
